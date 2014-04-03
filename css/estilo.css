@@ -36,13 +36,20 @@ footer{
 footer nav ul li{
 	list-style: none;
 	padding-left: 10px;
+	display: inline-block;
 }
+
+
 
 footer ul li{
 	list-style: none;
 	padding-left: 10px;
+	display: inline-block;
 }
 
-a{
+footer ul li a{
+	text-decoration: none;
+}
+footer nav ul li a{
 	text-decoration: none;
 }
