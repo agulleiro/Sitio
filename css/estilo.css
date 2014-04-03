@@ -23,3 +23,14 @@ header {
       header nav ul li:hover {
         color: #000;
         transition: all 1s; }
+
+footer{
+	display: inline-block;
+	background-color: #424242;
+	color:#E6E6E6;
+}
+
+footer nav ul li{
+	list-style: none;
+	padding-left: 10px;
+}
