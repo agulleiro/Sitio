@@ -26,6 +26,52 @@ header {
       transition: all 0.2s linear; }
       header nav ul li:hover {
         color: #000;
+<<<<<<< HEAD
         font-size: 2em;
         background-color: #c3c2f5;
         transition: all 0.2s linear; }
+=======
+        transition: all 1s; }
+
+footer{
+	position: absolute;
+	display: inline-block;
+	background-color: #424242;
+	color:#E6E6E6;
+	left:1%;  
+	width: 98%;
+	height:200px;
+	z-index: -1000;
+	padding-top: 1.5em;
+	text-align: center;
+}
+
+footer nav ul li{
+
+	text-align: center;
+	list-style: none;
+	padding-left: 10px;
+	display: inline-block;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit; }
+  a:visited {
+    color: inherit; }
+
+footer ul li{
+	text-align: center;
+	list-style: none;
+	padding-left: 10px;
+	display: inline-block;
+}
+
+footer ul li a{
+	text-decoration: none;
+}
+footer nav ul li a{
+	text-decoration: none;
+}
+>>>>>>> parent of e3d0c5a... Sacando estilos del css
