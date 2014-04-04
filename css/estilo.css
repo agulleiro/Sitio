@@ -29,6 +29,17 @@ a {
   a:hover {
     color: inherit; }
 
+.fullScreen {
+  width: 100%;
+  height: 100%; }
+
+footer {
+  width: 98%;
+  margin-left: 1%; }
+  footer nav ul li {
+    text-align: center;
+    list-style: none; }
+
 header {
   width: 100%;
   position: fixed;
