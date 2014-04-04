@@ -62,7 +62,7 @@ header {
       header nav ul li:hover {
         color: #000;
         font-size: 2em;
-        background-color: #c3c2f5;
+        background-color: rgba(195, 194, 245, 0.09);
         transition: all 0.2s linear; }
 
 .sombreado {
