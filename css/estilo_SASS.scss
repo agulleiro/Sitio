@@ -1,5 +1,5 @@
 @each $font-face in 'Bebas-Neue', 'Socialico'{
-	@font-face{  font-family: $font-face;
+	@font-face {  font-family: $font-face;
 				 font-style: normal;
 				 font-weight: normal;
 				 src:url('../font/#{$font-face}.eot');
@@ -13,11 +13,7 @@ html,body{
 			margin: 0;
 			padding:0;
 			max-width: 100%}
-body{
-  background-image: url(../img/fondo1.jpg);
-  background-repeat: no-repeat;
 
-}
 
 a{    
     color: inherit;
@@ -92,6 +88,8 @@ font-family: 'Alegreya Sans', sans-serif;
     }
   }
 header {
+  display: block;
+  margin: 0;
   width: 100%;
   position: fixed;
   top:0;
@@ -100,6 +98,9 @@ header {
   text-align: center;
   margin-bottom: 13em;
   border-radius: 0em 0em 2em 2em;
+
+
+
 
    nav ul {
    			margin-top: 1em;
@@ -125,6 +126,34 @@ header {
 
    }
 }
+
+#logo{ 
+      
+      width: 200px;
+      height: 200px;
+      z-index: 100;
+      position: absolute;
+      display: inline;
+      background-color: black;
+      left:0;
+      border-radius: 300px;
+
+  span{
+  color: white;
+  position: absolute;
+  left: 100px;
+  font: 20px 'VT323', MonoSpace;
+  height: 50%;
+  width: 20px;
+  top: 0;
+  -webkit-transform-origin: bottom center;
+}
+}
+
+@for $i from 1 to 20{
+    .char#{$i}
+        { -webkit-transform: rotate((315+$i*4.7)+deg);}
+}
 .IN{
   font-family: 'Socialico';
   font-size: 5em;
@@ -133,6 +162,11 @@ header {
     &:hover{
       color:#0489B1;
     }
+}
+
+#inicio{
+   background-image: url(../img/fondo1.jpg);
+  background-repeat: no-repeat;
 }
 
 .navegacionFooter{
