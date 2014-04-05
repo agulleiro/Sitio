@@ -14,6 +14,12 @@ html,body{
 			padding:0;
 			max-width: 100%}
 
+body{
+  background-image: url(../img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-color: #FFCE6B;
+}
+
 
 a{    
     color: inherit;
@@ -27,15 +33,31 @@ a{
 .caligrafia {
   font-family: 'Calligraffitti',cursive;
 }
+#contacto{
+  padding-top: 5%;
+  text-align: center;
+    #formulario{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 350px;
+    height: 460px;
+    }
+}
 .copyright{
 text-align: center;
 margin-top: -9px;
 font-family: 'Alegreya Sans', sans-serif;
 }
 
+.enviarComentario{
+  width: 250px;
+}
 
 footer{
-font-family: 'Alegreya Sans', sans-serif;
+  /* margin-top -> para que el boton Enviar Comentario se separe un poco de footer*/
+  margin-top: 0.3%;
+  font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 98%;
   margin-left: 1%;
@@ -73,10 +95,26 @@ font-family: 'Alegreya Sans', sans-serif;
       color:#08298A;
     }
    } 
+.formTA{
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.formInput{
 
+    width: 100%;
+    height: 35px;
+    margin-top: 15px;
+}
 .fullScreen{
   width: 100%;
   height: 100%;
+
+}
+.screen80{
+  width: 100%;
+  height: 80%;
 }
 .Gplus{
   font-family: 'Socialico';
@@ -127,33 +165,11 @@ header {
    }
 }
 
-#logo{ 
-      
-      width: 200px;
-      height: 200px;
-      z-index: 100;
-      position: absolute;
-      display: inline;
-      background-color: black;
-      left:0;
-      border-radius: 300px;
 
-  span{
-  color: white;
-  position: absolute;
-  left: 100px;
-  font: 20px 'VT323', MonoSpace;
-  height: 50%;
-  width: 20px;
-  top: 0;
-  -webkit-transform-origin: bottom center;
-}
-}
+  
 
-@for $i from 1 to 20{
-    .char#{$i}
-        { -webkit-transform: rotate((315+$i*4.7)+deg);}
-}
+
+
 .IN{
   font-family: 'Socialico';
   font-size: 5em;
@@ -197,8 +213,6 @@ header {
 .sombreado {
   -webkit-box-shadow: 13px 17px 55px -3px rgba(0,0,0,0.75);
 }
-
-
 
 
 .TW{

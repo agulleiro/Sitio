@@ -18,6 +18,11 @@ html, body {
   padding: 0;
   max-width: 100%; }
 
+body {
+  background-image: url(../img/fondo1.jpg);
+  background-repeat: no-repeat;
+  background-color: #FFCE6B; }
+
 a {
   color: inherit;
   text-decoration: none; }
@@ -29,12 +34,27 @@ a {
 .caligrafia {
   font-family: 'Calligraffitti',cursive; }
 
+#contacto {
+  padding-top: 5%;
+  text-align: center; }
+  #contacto #formulario {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 350px;
+    height: 460px; }
+
 .copyright {
   text-align: center;
   margin-top: -9px;
   font-family: 'Alegreya Sans', sans-serif; }
 
+.enviarComentario {
+  width: 250px; }
+
 footer {
+  /* margin-top -> para que el boton Enviar Comentario se separe un poco de footer*/
+  margin-top: 0.3%;
   font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 98%;
@@ -66,9 +86,24 @@ footer {
   .FB:hover {
     color: #08298A; }
 
+.formTA {
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.formInput {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px; }
+
 .fullScreen {
   width: 100%;
   height: 100%; }
+
+.screen80 {
+  width: 100%;
+  height: 80%; }
 
 .Gplus {
   font-family: 'Socialico';
@@ -104,82 +139,6 @@ header {
         font-size: 2em;
         background-color: rgba(195, 194, 245, 0.09);
         transition: all 0.2s linear; }
-
-#logo {
-  width: 200px;
-  height: 200px;
-  z-index: 100;
-  position: absolute;
-  display: inline;
-  background-color: black;
-  left: 0;
-  border-radius: 300px; }
-  #logo span {
-    color: white;
-    position: absolute;
-    left: 100px;
-    font: 20px 'VT323', MonoSpace;
-    height: 50%;
-    width: 20px;
-    top: 0;
-    -webkit-transform-origin: bottom center; }
-
-.char1 {
-  -webkit-transform: rotate(319.7deg); }
-
-.char2 {
-  -webkit-transform: rotate(324.4deg); }
-
-.char3 {
-  -webkit-transform: rotate(329.1deg); }
-
-.char4 {
-  -webkit-transform: rotate(333.8deg); }
-
-.char5 {
-  -webkit-transform: rotate(338.5deg); }
-
-.char6 {
-  -webkit-transform: rotate(343.2deg); }
-
-.char7 {
-  -webkit-transform: rotate(347.9deg); }
-
-.char8 {
-  -webkit-transform: rotate(352.6deg); }
-
-.char9 {
-  -webkit-transform: rotate(357.3deg); }
-
-.char10 {
-  -webkit-transform: rotate(362deg); }
-
-.char11 {
-  -webkit-transform: rotate(366.7deg); }
-
-.char12 {
-  -webkit-transform: rotate(371.4deg); }
-
-.char13 {
-  -webkit-transform: rotate(376.1deg); }
-
-.char14 {
-  -webkit-transform: rotate(380.8deg); }
-
-.char15 {
-  -webkit-transform: rotate(385.5deg); }
-
-.char16 {
-  -webkit-transform: rotate(390.2deg); }
-
-.char17 {
-  -webkit-transform: rotate(394.9deg); }
-
-.char18 {
-  -webkit-transform: rotate(399.6deg); }
-
-.char19 {
-  -webkit-transform: rotate(404.3deg); }
 
 .IN {
   font-family: 'Socialico';
