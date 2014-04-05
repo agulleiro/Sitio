@@ -20,7 +20,8 @@ html, body {
 
 body {
   background-image: url(../img/fondo1.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: #FFCE6B; }
 
 a {
   color: inherit;
@@ -33,12 +34,27 @@ a {
 .caligrafia {
   font-family: 'Calligraffitti',cursive; }
 
+#contacto {
+  padding-top: 5%;
+  text-align: center; }
+  #contacto #formulario {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: 350px;
+    height: 460px; }
+
 .copyright {
   text-align: center;
   margin-top: -9px;
   font-family: 'Alegreya Sans', sans-serif; }
 
+.enviarComentario {
+  width: 250px; }
+
 footer {
+  /* margin-top -> para que el boton Enviar Comentario se separe un poco de footer*/
+  margin-top: 0.3%;
   font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 98%;
@@ -70,9 +86,24 @@ footer {
   .FB:hover {
     color: #08298A; }
 
+.formTA {
+  width: 100%;
+  height: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.formInput {
+  width: 100%;
+  height: 35px;
+  margin-top: 15px; }
+
 .fullScreen {
   width: 100%;
   height: 100%; }
+
+.screen80 {
+  width: 100%;
+  height: 80%; }
 
 .Gplus {
   font-family: 'Socialico';

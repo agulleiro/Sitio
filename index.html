@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Inicio</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,8 +49,15 @@
         <section id="portfolio">
             <p>Portfolio</p>
         </section>
-        <section id="contacto">
+        <section id="contacto" class="screen80">
             <p>Contacto</p>
+            <form action="enviarMail.php" method="post" id="formulario">
+                    <input type="text" name="nombre" class="formInput" placeholder="Nombre">
+                    <input type="email" name="email" class="formInput" placeholder="Direccion de correo">
+                    <input type="text" name="asunto" class="formInput" placeholder="Asunto">
+                    <textarea name="comentario" placeholder="Comentario" class="formTA"></textarea>
+                    <input type="submit" value="Enviar comentario" class="enviarComentario">
+            </form>
         </section>
         
         <!-- Footer a organizar -->
