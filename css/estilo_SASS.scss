@@ -14,13 +14,6 @@ html,body{
 			padding:0;
 			max-width: 100%}
 
-body{
-  background-image: url(../img/fondo1.jpg);
-  background-repeat: no-repeat;
-  background-color: #FFCE6B;
-}
-
-
 a{    
     color: inherit;
     text-decoration: none;
@@ -61,7 +54,7 @@ footer{
   height: 185px;
   width: 98%;
   margin-left: 1%;
-  z-index: -100000;
+  z-index: 10;
   position: absolute;
   background-color: #151515;
   color:#6E6E6E;
@@ -181,9 +174,71 @@ header {
 }
 
 #inicio{
-   background-image: url(../img/fondo1.jpg);
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: -1;
+  background-image: url(../img/fondo2.jpg);
   background-repeat: no-repeat;
+
+  #mensajePrincipal{
+        
+         font-family: 'Londrina Outline', cursive;
+         line-height:1.2em;
+         color: white;
+         font-size: 60px;
+
+
+         .bottom{ display: inline-block;
+                  position: absolute;
+                  right:0;
+                  bottom: 0;
+                  margin:20px;
+                  }
+
+
+           .titulo{position: absolute;
+                  top:0;
+                  bottom: 0;
+                  right: 0;
+                  left: 0;
+                  margin-top: 400px;
+                  text-align: center;
+                  color: white;
+                  letter-spacing: 10px;
+                   }
+
+              #imagen{ position: absolute;
+                      top:70px;
+                      bottom: 0;
+                      right: 0;
+                      left: 0;
+                      margin-left: 70px;
+                      background-image: url(../img/nube.png);
+              }
+                
+
+
+        
+         .top{  
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 20px;  
+
+              
+          }
+    }
+           
+     
 }
+
+ 
+
+
+
 
 .navegacionFooter{
     padding-top: 0px;
@@ -202,6 +257,10 @@ header {
     }
   }
 }
+}
+
+#quienesSomos{
+  position: relative;
 }
 
 .socialFooter{
