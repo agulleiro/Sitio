@@ -144,12 +144,12 @@ header {
     color: #0489B1; }
 
 #inicio {
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   height: 100%;
   width: 100%;
   top: 0;
-  z-index: -1;
+  z-index: -5;
   background-image: url(../img/fondo2.jpg);
   background-repeat: no-repeat; }
   #inicio #mensajePrincipal {
@@ -175,17 +175,32 @@ header {
       letter-spacing: 10px; }
     #inicio #mensajePrincipal #imagen {
       position: absolute;
-      top: 70px;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin-left: 70px;
-      background-image: url(../img/nube.png); }
+      height: 500px;
+      width: 700px;
+      top: 25%;
+      background-size: 170% auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 5;
+      left: 20%;
+      background-image: url(../img/nube.png);
+      cursor: pointer;
+      margin: 0;
+      transition: all 1s ease; }
+      #inicio #mensajePrincipal #imagen:hover {
+        position: absolute;
+        top: 190px;
+        transition: all 1s ease; }
     #inicio #mensajePrincipal .top {
       position: absolute;
       left: 0;
       top: 0;
       margin: 20px; }
+
+#inicio1 {
+  position: absolute;
+  top: 0;
+  margin: 0; }
 
 .navegacionFooter {
   padding-top: 0px;
@@ -200,7 +215,11 @@ header {
       -ms-transform: rotate(-9deg); }
 
 #quienesSomos {
-  position: relative; }
+  background-image: url(../img/fondo4.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  margin-top: 100%; }
 
 .socialFooter {
   display: inline-block;
