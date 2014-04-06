@@ -11,12 +11,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <!--Fuentes -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/estilo.css">
+
+       
         <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Londrina+Outline' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
@@ -27,8 +31,8 @@
         <![endif]-->
 
         <header  class="sombreado">
-            <div id="logo"></div>
-            <div class="caligrafia ">
+                  
+            <div class="caligrafia">
                 <nav id="navegacionPrincipal">
                     <ul >
                         <li><a href="#inicio">Inicio</a></li>
@@ -40,16 +44,25 @@
             </div>
         </header>
 
-        <section class="fullScreen" id="inicio">
-            <p>Inicio</p>
+        <section class="fullScreen"  id="inicio">
+           <div id="mensajePrincipal" class="caligrafia">
+                <div class="top">
+            <h2>Nosotros<br>Programamos</h2>
+                </div>
+                <div class="bottom"><h2>Ustedes<br> nos eligen</h2>
+                </div>
+                <div id="imagen"></div>
+                <h1 class="titulo caligrafia"></h1>
+           </div>
         </section>
-        <section id="quienesSomos">
-            <p>¿ Quienes somos ?</p>
+        
+        <section class="fullScreen" id="quienesSomos">
+            <p>¿Quienes somos?</p>
         </section>
-        <section id="portfolio">
+        <section  class="fullScreen"  id="portfolio">
             <p>Portfolio</p>
         </section>
-        <section id="contacto" class="screen80">
+        <section class="fullScreen" id="contacto" class="screen80">
             <p>Contacto</p>
             <form action="enviarMail.php" method="post" id="formulario">
                     <input type="text" name="nombre" class="formInput" placeholder="Nombre">
@@ -87,8 +100,9 @@
         </footer>
 
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/lettering.js"></script>
         <script src="js/scrollto.min.js"></script>
         <script src="js/localscroll.min.js"></script>
         <script src="js/plugins.js"></script>
