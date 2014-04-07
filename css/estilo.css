@@ -16,6 +16,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  width: 100%;
   max-width: 100%; }
 
 a {
@@ -30,8 +31,9 @@ a {
   font-family: 'Calligraffitti',cursive; }
 
 #contacto {
+  position: relative;
   background-image: url(../img/fondo4.jpg);
-  background-size: 110%;
+  background-size: 100%;
   padding-top: 5%;
   text-align: center; }
   #contacto .triangulo {
@@ -174,7 +176,7 @@ header {
   height: 100%;
   width: 100%;
   top: 0;
-  z-index: -5;
+  z-index: 0;
   background-image: url(../img/fondo2.jpg);
   background-repeat: no-repeat; }
   #inicio #mensajePrincipal {
@@ -226,7 +228,7 @@ header {
   position: relative;
   top: 0;
   margin: 0;
-  z-index: 1;
+  z-index: -5;
   display: block; }
 
 .navegacionFooter {
@@ -244,7 +246,8 @@ header {
 #quienesSomos {
   position: relative;
   z-index: 1;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%; }
   #quienesSomos img {
     position: absolute;
     z-index: -1;
@@ -252,8 +255,11 @@ header {
     height: 100%; }
   #quienesSomos h1 {
     text-shadow: 5px 5px 0px #000; }
+  #quienesSomos div {
+    width: 90%; }
   #quienesSomos p {
     position: relative;
+    width: 90%;
     top: 40%;
     left: 10%;
     font-family: 'courier'; }
@@ -286,13 +292,9 @@ header {
   border-radius: 45%;
   text-align: center;
   margin: 0 auto;
-<<<<<<< HEAD
   top: 10%;
   left: 10%;
   letter-spacing: -5px; }
-=======
-  top: 20%;
-  left: 20%; }
 
 .comentarioContacto {
   float: left;
@@ -304,4 +306,3 @@ header {
   padding-top: 10%;
   padding-left: 3%;
   text-shadow: 0px 0px 4px #FFF; }
->>>>>>> 5d3bf5392c21f3c0535a22aed212a77418e11752
