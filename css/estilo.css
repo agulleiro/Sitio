@@ -215,11 +215,15 @@ header {
       -ms-transform: rotate(-9deg); }
 
 #quienesSomos {
+  position: relative;
   background-image: url(../img/fondo4.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   z-index: 1;
-  margin-top: 100%; }
+  margin-top: 100%;
+  -webkit-filter: grayscale(1) blur(5px); }
+  #quienesSomos:hover {
+    -webkit-filter: grayscale(0.2) blur(0px); }
 
 .socialFooter {
   display: inline-block;
@@ -237,3 +241,17 @@ header {
   transition: all 0.6s; }
   .TW:hover {
     color: #2ECCFA; }
+
+.logo {
+  font-family: 'Seymour One', sans-serif;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  z-index: 5;
+  padding: 50px;
+  background-color: red;
+  border-radius: 45%;
+  text-align: center;
+  margin: 0 auto;
+  top: 20%;
+  left: 20%; }
