@@ -1,3 +1,4 @@
+@charset "CP850";
 @font-face {
   font-family: "Bebas-Neue";
   font-style: normal;
@@ -30,11 +31,61 @@ a {
 .caligrafia {
   font-family: 'Calligraffitti',cursive; }
 
+.comentarioContacto {
+  float: left;
+  width: 30%;
+  height: 200px;
+  font-family: 'Englebert', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  padding-top: 10%;
+  padding-left: 3%;
+  text-shadow: 0px 0px 4px #FFF; }
+
+.imgContacto {
+  top: 48%;
+  left: 9.5%;
+  position: relative;
+  float: right;
+  width: 30%;
+  height: 250px;
+  background: url(../img/mensaje02.png) no-repeat;
+  background-size: 65%;
+  z-index: 100000000;
+  transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  opacity: 0.59;
+  overflow: visible; }
+
 #contacto {
   position: relative;
   background-image: url(../img/fondo4.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-color: #3686b1;
+  /*Probando color degradiente*/
+  background: #c5deea;
+  background: -moz-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c5deea), color-stop(31%, #8abbd7), color-stop(100%, #066dab));
+  background: -webkit-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+  background: -o-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+  background: -ms-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+  background: linear-gradient(to right, #c5deea 0%, #8abbd7 31%, #066dab 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5deea', endColorstr='#066dab',GradientType=1 );
+  /*
+    background: #d0e4f7;
+    background: -moz-linear-gradient(45deg,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea));
+    background: -webkit-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
+    background: -o-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
+    background: -ms-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
+    background: linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
+    */
+  /* Suspendemos imagen por el momento */
+  /*background-image: url(../img/fondo4.jpg);*/
+  background-size: 100%;
   padding-top: 5%;
   text-align: center; }
   #contacto .triangulo {
@@ -44,26 +95,44 @@ a {
     border-top: 60px solid transparent;
     border-left: 130px solid #262626;
     border-bottom: 60px solid transparent; }
-    #contacto .triangulo span {
+    #contacto .triangulo .palabraContacto {
       line-height: 4em;
       display: block;
       top: -2em;
-      left: -130px;
+      left: 1500px;
       position: relative; }
   #contacto .subContacto {
     width: 100%;
     height: 120px;
-    background-color: rgba(84, 84, 84, 0.6);
+    background-color: rgba(255, 255, 255, 0.4);
     text-align: left;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: bolder;
     font-size: 26px;
     color: #FBFBF5;
-    border-radius: 0 0.5em 0.5em 0; }
+    border-radius: 0 0.5em 0.5em 0;
+    overflow: hidden;
+    transition: all 1.5s; }
+    #contacto .subContacto .carita {
+      width: 100px;
+      height: 100px;
+      display: block;
+      background: url(../img/cara01.png);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      float: right;
+      margin-right: 25px; }
   #contacto #formulario {
-    margin-top: 5%;
-    display: inline-block;
-    position: relative;
+    /* Se cambian valores para acomodar con más libertad
+        top: -1%;
+        margin-top: 5%;
+        display: inline-block;
+    */
+    top: 330px;
+    left: 550px;
+    display: block;
+    position: absolute;
     text-align: center;
     width: 550px;
     height: 460px; }
@@ -138,7 +207,7 @@ footer {
 
 .screen80 {
   width: 100%;
-  height: 82%; }
+  height: 80%; }
 
 .Gplus {
   font-family: 'Socialico';
@@ -230,6 +299,8 @@ header {
         position: absolute;
         top: 190px;
         transition: all 1s ease; }
+        #inicio #mensajePrincipal #imagen:hover .carita {
+          margin-top: 100px; }
     #inicio #mensajePrincipal .top {
       position: absolute;
       left: 0;
@@ -261,14 +332,21 @@ header {
 .navegacionFooter {
   padding-top: 0px;
   margin-top: -6px;
-  margin-left: -3em; }
-  .navegacionFooter nav ul li {
-    transition: all 0.4s; }
-    .navegacionFooter nav ul li:hover {
-      text-shadow: 0px 0px 1.3px #F5F6CE;
-      -webkit-transform: rotate(-9deg);
-      transform: rotate(-9deg);
-      -ms-transform: rotate(-9deg); }
+  margin-left: -3em;
+  /* ----------> Se sacan Hovers momentaneamente <---------
+  nav{
+    ul{
+      li{
+        transition:all 0.4s;
+        &:hover{
+          text-shadow:0px 0px 1.3px #F5F6CE;
+          -webkit-transform:rotate(-9deg);
+          transform:rotate(-9deg);
+          -ms-transform:rotate(-9deg);
+      }
+    }
+  }
+}*/ }
 
 #portfolio {
   position: relative;
@@ -318,6 +396,35 @@ header {
 
 .sombreado {
   -webkit-box-shadow: 13px 17px 55px -3px rgba(0, 0, 0, 0.75); }
+
+#tecnologias {
+  background: #f5f6f6;
+  background: -moz-linear-gradient(left, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #f5f6f6), color-stop(21%, #dbdce2), color-stop(49%, #b8bac6), color-stop(80%, #dddfe3), color-stop(100%, #f5f6f6));
+  background: -webkit-linear-gradient(left, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+  background: -o-linear-gradient(left, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+  background: -ms-linear-gradient(left, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+  background: linear-gradient(to right, #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 );
+  position: relative;
+  display: block;
+  text-align: center;
+  padding-top: 10em; }
+  #tecnologias div {
+    text-align: center; }
+    #tecnologias div h3 {
+      text-align: center;
+      font-family: 'Englebert', sans-serif;
+      font-size: 36px; }
+    #tecnologias div span {
+      text-align: center;
+      font-family: 'Englebert', sans-serif;
+      font-size: 28px; }
+    #tecnologias div ul li {
+      font-size: 22px;
+      text-align: center;
+      list-style: none;
+      font-family: 'Englebert', sans-serif; }
 
 .TW {
   font-family: 'Socialico';
