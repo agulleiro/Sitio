@@ -20,6 +20,29 @@ function init()
 {
 
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
-	$('.navegacionFooter').localScroll();  
+	$('.navegacionFooter').localScroll(); 
+    var intv = setInterval(nubeFlotante,800);
+
 	
 }
+
+
+function nubeFlotante(){
+
+//alert($("#imagen").position().top);
+   var imagen= $("#imagen");
+        if(imagen.position().top > 203)
+            {   
+                imagen.css({
+                    'top': 185+'px'
+                });
+    }
+    else  { if(imagen.position().top < 203)
+            {   
+                imagen.css({
+                    'top': 230+'px'
+                });
+    }
+}
+}
+
