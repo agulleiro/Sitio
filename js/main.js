@@ -20,7 +20,8 @@ function init()
 {
 
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
-	$('.navegacionFooter').localScroll(); 
+	$('.navegacionFooter').localScroll();
+    $('#quienesSomos').localScroll(); 
    // var intv = setInterval(nubeFlotante,800);
     Aparecerobjetos();  // probando funcion para aprender
 
@@ -49,13 +50,9 @@ function init()
 
 function Aparecerobjetos(){
 
-$('#mensaje').css({
-
-        'opacity': 1,
-        //'left': 60+'%'
-
-
-});
+var intv = setInterval(funcion3,1600);
+var intv = setInterval(funcion1,3500);
+var intv = setInterval(funcion2,6000);
 
 /*$('#cajaNegra').css({
 
@@ -68,3 +65,28 @@ $('#mensaje').css({
 
 }
 
+function funcion1(){
+
+  $('#frase1').css({
+
+    'opacity': 1
+  });
+}
+
+function funcion2(){
+
+  $('#frase2').css({
+
+    'opacity': 1
+  });
+
+}
+
+function funcion3(){
+
+  $('#frase3').css({
+
+    'opacity': 1
+  });
+
+}
