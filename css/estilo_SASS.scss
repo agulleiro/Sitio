@@ -466,27 +466,36 @@ header {
        #boxContinuar{
         position: absolute;
         width: 100%;
-        left: 45%;
+        
         top: 0;
         margin-top: 20px;
         
         
                       
           #continuar{       
-                  
+                    
                     position: absolute;
+                    left:45%;
                     top: 5%;
                     background-color: rgba(255,255,255,0.2);
                     padding: 10px 20px;                
                     border: 3px solid white;
                     border-radius: 20px;
                     font-weight: bold;
-                    
                     color: white;
+                    transition: background-color 1s ease;
+                       
+                    &:hover{
+                      transition: background-color 1s ease;
+                      background-color: rgba(255,255,255,0);
+                    }
                        }
+
           }
         
-      
+          #probando{position: absolute;
+                    top:5%;
+          }
           img{
             position: absolute;
             z-index: -1;
