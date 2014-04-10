@@ -260,7 +260,7 @@ header {
   .IN:hover {
     color: #0489B1; }
 
-#inicio {
+#fondo {
   position: fixed;
   display: inline;
   overflow: hidden;
@@ -268,60 +268,49 @@ header {
   width: 100%;
   top: 0;
   z-index: 0;
-  background-image: url(../img/fondo2.jpg);
-  background-repeat: no-repeat; }
-  #inicio #mensajePrincipal {
-    font-family: 'Londrina Outline', cursive;
-    line-height: 1.2em;
-    color: white;
-    font-size: 60px; }
-    #inicio #mensajePrincipal .bottom {
-      display: inline-block;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      margin: 20px; }
-    #inicio #mensajePrincipal .titulo {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      left: 0;
-      margin-top: 400px;
-      text-align: center;
-      color: white;
-      letter-spacing: 10px; }
-    #inicio #mensajePrincipal #imagen {
-      position: absolute;
-      height: 500px;
-      width: 700px;
-      top: 23%;
-      z-index: 5;
-      left: 23%;
-      cursor: pointer;
-      margin: 0;
-      transition: all 1.8s ease; }
-      #inicio #mensajePrincipal #imagen:hover {
-        position: absolute;
-        top: 175px;
-        transition: all 1.8s ease; }
-        #inicio #mensajePrincipal #imagen:hover .carita {
-          margin-top: 100px; }
-      #inicio #mensajePrincipal #imagen img {
-        width: 90%;
-        height: auto; }
-    #inicio #mensajePrincipal .top {
-      position: absolute;
-      left: 0;
-      top: 0;
-      margin: 20px; }
+  background-image: url(../img/fondo3.jpg);
+  background-size: 100% 100%; }
 
-#inicio1 {
+#inicio {
   position: relative;
   top: 0;
   margin: 0;
-  z-index: -5;
-  display: block; }
+  z-index: 1; }
+  #inicio #cajaNegra {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    top: 0px;
+    background-color: black;
+    opacity: 0.59;
+    transition: all 2s linear; }
+  #inicio #mensaje {
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Quantico', sans-serif;
+    line-height: 1.2em;
+    color: white;
+    font-size: 24px;
+    top: 200px;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 2s linear; }
+    #inicio #mensaje img {
+      margin-bottom: 50px;
+      margin-top: 50px;
+      width: 70%;
+      top: 30%;
+      height: auto; }
 
 .logo {
   font-family: 'Seymour One', sans-serif;
