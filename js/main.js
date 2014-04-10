@@ -21,13 +21,14 @@ function init()
 
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll(); 
-    var intv = setInterval(nubeFlotante,800);
+   // var intv = setInterval(nubeFlotante,800);
+    Aparecerobjetos();  // probando funcion para aprender
 
 	
 }
 
 
-function nubeFlotante(){
+/*function nubeFlotante(){
 
 //alert($("#imagen").position().top);
    var imagen= $("#imagen");
@@ -44,5 +45,26 @@ function nubeFlotante(){
                 });
     }
 }
+}*/
+
+function Aparecerobjetos(){
+
+$('#mensaje').css({
+
+        'opacity': 1,
+        //'left': 60+'%'
+
+
+});
+
+/*$('#cajaNegra').css({
+
+        
+        'left': 60+'%'
+
+
+});*/
+    
+
 }
 
