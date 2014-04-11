@@ -50,9 +50,10 @@ function init()
 
 function Aparecerobjetos(){
 
-var intv = setInterval(funcion3,1600);
-var intv = setInterval(funcion1,3500);
-var intv = setInterval(funcion2,6000);
+setTimeout(funcion3, 1600);
+setTimeout(funcion1,3500);
+setTimeout(funcion2,6000);
+
 
 /*$('#cajaNegra').css({
 
@@ -74,7 +75,7 @@ function funcion1(){
 }
 
 function funcion2(){
-
+ 
   $('#frase2').css({
 
     'opacity': 1
