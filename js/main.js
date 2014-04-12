@@ -22,9 +22,45 @@ function init()
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
     $('#quienesSomos').localScroll(); 
+    $(document).on('mousemove',function(e){ 
+
+
+     /* if($("#jodido").position().left>= $(document).width()-$("#jodido").width())
+          {$("#jodido").css({
+          'left': $(document).width()-$("#jodido").width()+'px'
+        });}
+
+        $("#jodido").css({
+          'left': e.pageX+'px' */
+     
+
+          if(e.pageX>=$(document).width()-$("#jodido").width())
+          {
+            $("#jodido").css({
+          'left': $(document).width()-$("#jodido").width()+'px'});
+          }
+          else
+          {
+                $("#jodido").css({
+               'left': e.pageX+'px'});
+
+          }
+
+      
+       
+
+
+    });
+
+ 
+       
+       
+      //  var pos = "e.pageX: " + e.pageX + ", e.pageY: " + e.pageY; 
+
+       // console.log(pos)
    // var intv = setInterval(nubeFlotante,800);
     Aparecerobjetos();  // probando funcion para aprender
-   
+ 
       //scrollMouse();  //baja o sube automaticamente (funciona solo en chrome)
 
   }
@@ -139,3 +175,10 @@ function scrollMouse(){
   return false;
 });
 }
+
+
+/*function posMouse(){
+  $(document).bind('mousemove',function(e){ 
+        $("#log").text("e.pageX: " + e.pageX + ", e.pageY: " + e.pageY); 
+}); 
+}*/
