@@ -20,6 +20,7 @@ html,body{
 			padding:0;
       width: 100%;
 			max-width: 100%;
+
             }
 
 a{  color: inherit;
@@ -208,13 +209,15 @@ font-family: 'Alegreya Sans', sans-serif;
 }
 
 footer{
+
   font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 100%;
-  //width: 98%;
-  //margin-left: 1%;
+ /* //width: 98%;
+  //margin-left: 1%;*/
   z-index: 10;
-  position: absolute;
+  position:absolute;
+  
   background-image: url(../img/textura.jpg);
   background-color: #151515;
   overflow: hidden;
@@ -478,6 +481,15 @@ header {
   border-top: 2px solid black;
 
 
+#jodido{opacity: 1; 
+        position: absolute;
+        top: 550px;
+        left:0px;
+        width: 10%;
+        height: auto;
+        z-index: 5;
+}
+
        #boxContinuar{
         position: absolute;
         width: 100%;
@@ -517,6 +529,8 @@ header {
             opacity: 0.4;
             border-top: 3px solid white;
             border-bottom: 3px solid white;
+
+           
           }
             
            #prueba{
@@ -527,11 +541,26 @@ header {
       
           }
 
+          #presentacionAbajo{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 300px;
+                width: 50%;
+                margin-top: 13%;
+                margin-bottom: 4%;
+                margin-left: 7%;
+                font-family: 'Quantico', sans-serif;
+                font-size: 30px;
+                color: white;
+              }
+
           #presentacion{
                 
                 height: 300px;
                 width: 50%;
-                margin-top: 15%;
+                margin-top: 13%;
+                margin-bottom: 4%;
                 margin-left: 7%;
                 font-family: 'Quantico', sans-serif;
                 font-size: 30px;
