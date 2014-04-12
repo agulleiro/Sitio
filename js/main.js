@@ -24,9 +24,13 @@ function init()
     $('#quienesSomos').localScroll(); 
    // var intv = setInterval(nubeFlotante,800);
     Aparecerobjetos();  // probando funcion para aprender
+   
+      //scrollMouse();  //baja o sube automaticamente (funciona solo en chrome)
 
+  }
+    
 	
-}
+
 
 
 /*function nubeFlotante(){
@@ -90,4 +94,48 @@ function funcion3(){
     'opacity': 1
   });
 
+}
+
+
+function scrollMouse(){
+  $('body').on('DOMMouseScroll mousewheel', function (e) {
+  var height = $(window).scrollTop();
+  if(e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) { //alternative options for wheelData: wheelDeltaX & wheelDeltaY
+    //scroll Down
+     //alert($(window).scrollTop());
+     
+        if(height>=0 && height< 890 )
+          {$("body").animate({ scrollTop: $("#prueba").offset().top },500);}
+        else{
+      
+        if(height>=890 && height< 1799 )
+           {$("body").animate({ scrollTop: $("#portfolio").offset().top }, 500);}
+
+         else{
+        if(height>=1799 && height< 2698 )
+          {$("body").animate({ scrollTop: $("#tecnologias").offset().top }, 500);}
+
+        else {
+        if(height>=2698 && height< 3757 )
+          {$("body").animate({ scrollTop: $("#contacto").offset().top }, 500);}
+         else {return true;}
+       }
+     }
+   }
+     
+      }
+  else {
+    //scroll up
+     if(height>=890 && height< 1799 )
+        $("body").animate({ scrollTop: $("#inicio").offset().top },500);
+       if(height>=1799 && height<2698 )
+        $("body").animate({ scrollTop: $("#prueba").offset().top }, 500);
+         if(height>=2698 && height< 3757 )
+        $("body").animate({ scrollTop: $("#portfolio").offset().top }, 500);
+       if(height>=3757)
+        $("body").animate({ scrollTop: $("#tecnologias").offset().top },500);
+  }
+  //prevent page fom scrolling
+  return false;
+});
 }
