@@ -202,6 +202,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', end
 text-align: center;
 margin-top: -9px;
 font-family: 'Alegreya Sans', sans-serif;
+  span{
+    font-family:sans-serif;
+  }
 }
 
 .enviarComentario{
@@ -442,7 +445,7 @@ header {
     padding-top: 0px;
   margin-top: -6px;
   margin-left: -3em;
-  /* ----------> Se sacan Hovers momentaneamente <---------
+
   nav{
     ul{
       li{
@@ -455,7 +458,7 @@ header {
       }
     }
   }
-}*/
+}
 }
 
 #portfolio{
