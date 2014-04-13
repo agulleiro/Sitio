@@ -1,3 +1,5 @@
+var pos=1;
+
 $(document).on('ready', init);
 $("#contacto").hover(function(){
   $(".palabraContacto").css("transition","all 1.8s ease");
@@ -22,71 +24,30 @@ function init()
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
     $('#quienesSomos').localScroll(); 
-    $(document).on('mousemove',function(e){ 
-
-
-     /* if($("#jodido").position().left>= $(document).width()-$("#jodido").width())
-          {$("#jodido").css({
-          'left': $(document).width()-$("#jodido").width()+'px'
-        });}
-
-        $("#jodido").css({
-          'left': e.pageX+'px' */
-     
-
-          if(e.pageX>=$(document).width()-$("#jodido").width())
-          {
-            $("#jodido").css({
-          'left': $(document).width()-$("#jodido").width()+'px'});
-          }
-          else
-          {
-                $("#jodido").css({
-               'left': e.pageX+'px'});
-
-          }
-
-      
-       
-
-
-    });
-
- 
-       
-       
-      //  var pos = "e.pageX: " + e.pageX + ", e.pageY: " + e.pageY; 
-
-       // console.log(pos)
-   // var intv = setInterval(nubeFlotante,800);
     Aparecerobjetos();  // probando funcion para aprender
  
-      //scrollMouse();  //baja o sube automaticamente (funciona solo en chrome)
+
+    var width = $('.slider_container').width();
+  $('.slide').each(function(i,e){
+          $(e).css('width', width);
+
+          
+    });
+      
+      
+
+
+   
+ 
+      var intv = setInterval(slide,5000); 
+       
+    
+    
+ 
+     
 
   }
     
-	
-
-
-
-/*function nubeFlotante(){
-
-//alert($("#imagen").position().top);
-   var imagen= $("#imagen");
-        if(imagen.position().top > 203)
-            {   
-                imagen.css({
-                    'top': 185+'px'
-                });
-    }
-    else  { if(imagen.position().top < 203)
-            {   
-                imagen.css({
-                    'top': 230+'px'
-                });
-    }
-}
-}*/
 
 function Aparecerobjetos(){
 
@@ -95,13 +56,6 @@ setTimeout(funcion1,3500);
 setTimeout(funcion2,6000);
 
 
-/*$('#cajaNegra').css({
-
-        
-        'left': 60+'%'
-
-
-});*/
     
 
 }
@@ -176,9 +130,26 @@ function scrollMouse(){
 });
 }
 
+function slide(){
+  
+/*$('.slideContainer').css({
+  'margin-left': -(pos* $('.slider_container').width())+'px'
+});*/
 
-/*function posMouse(){
-  $(document).bind('mousemove',function(e){ 
-        $("#log").text("e.pageX: " + e.pageX + ", e.pageY: " + e.pageY); 
-}); 
-}*/
+  
+ $('.slideContainer').slideDown('slow',function(){
+      $(this).animate({
+        'margin-left':-(pos* $('.slider_container').width())+'px'}
+        ,'slow',function(){
+          $(this).fadeIn();
+            });
+    });
+
+     
+
+   pos++;
+  if(pos>2){
+    pos=0;
+  }
+}
+
