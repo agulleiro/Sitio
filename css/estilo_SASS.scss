@@ -202,6 +202,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', end
 text-align: center;
 margin-top: -9px;
 font-family: 'Alegreya Sans', sans-serif;
+  span{
+    font-family:sans-serif;
+  }
 }
 
 .enviarComentario{
@@ -442,7 +445,7 @@ header {
     padding-top: 0px;
   margin-top: -6px;
   margin-left: -3em;
-  /* ----------> Se sacan Hovers momentaneamente <---------
+
   nav{
     ul{
       li{
@@ -455,7 +458,7 @@ header {
       }
     }
   }
-}*/
+}
 }
 
 #portfolio{
@@ -669,44 +672,99 @@ header {
 }
 
 #tecnologias{
-  width: 100%;
-  background: #f5f6f6;
-  background: -moz-linear-gradient(left,  #f5f6f6 0%, #dbdce2 21%, #b8bac6 49%, #dddfe3 80%, #f5f6f6 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f5f6f6), color-stop(21%,#dbdce2), color-stop(49%,#b8bac6), color-stop(80%,#dddfe3), color-stop(100%,#f5f6f6));
-  background: -webkit-linear-gradient(left,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
-  background: -o-linear-gradient(left,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
-  background: -ms-linear-gradient(left,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
-  background: linear-gradient(to right,  #f5f6f6 0%,#dbdce2 21%,#b8bac6 49%,#dddfe3 80%,#f5f6f6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f6f6', endColorstr='#f5f6f6',GradientType=1 );
   position: relative;
-  display: block;
-      text-align: center;
-      padding-top: 10em;
-    div{
+.tecnologias{
+  position: absolute;
+  top: 0;
+  left:0;
+  background-image: url(../img/tecno01.jpg);
+  background-size: 110%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+      .cuadrado{
+        opacity: 0.95;
+        margin-top: 0.3em;
+        margin-left: 0.7em;
+        margin-right: 0.7em;
+        position: relative;
+        display: inline-block;
+        width:24%;
+        height: 200px;
+        background-color: black;
+        overflow: hidden;
+          .texto{
 
-      text-align: center;
-    
-    h3{
-      
-      text-align:  center;
-      font-family: 'Englebert', sans-serif;
-      font-size: 36px;
-    } 
-    span{
-      
-      text-align: center;
-      font-family: 'Englebert', sans-serif;
-      font-size: 28px;
-    }
-    ul{
-      li{
-        font-size: 22px;
-        text-align: center;
-        list-style: none;
-        font-family: 'Englebert', sans-serif;
-      }
-    }
-    }
+            text-align: left;
+            color: white;
+            text-shadow:0px 0px 1px #000;
+            margin-top: 170px;
+            background: #b5bdc8;
+            background: -moz-linear-gradient(top,  #b5bdc8 0%, #828c95 36%, #28343b 100%);
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b5bdc8), color-stop(36%,#828c95), color-stop(100%,#28343b));
+            background: -webkit-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+            background: -o-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+            background: -ms-linear-gradient(top,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+            background: linear-gradient(to bottom,  #b5bdc8 0%,#828c95 36%,#28343b 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
+            opacity: 0.5;
+            height: 20px;
+            font-size: 19px;
+            font-family: 'Nova Square', cursive;
+            padding-left: 1em;
+          }
+      } 
+}
+
+.tecno{
+  text-align: center;
+  position: absolute;  
+  color: white;
+  overflow: hidden;
+  font-family: 'Nova Square', cursive;
+  line-height: 100px;
+}
+
+.html5{
+  background: url(../img/html5.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.css3{
+  background: url(../img/css3.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.php{
+  background: url(../img/php.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.js{
+  background: url(../img/javascript.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.jquery{
+  background: url(../img/jquery.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.mysql{
+  background: url(../img/Mysql.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.net{
+  background: url(../img/visualstudio.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.java{
+  background: url(../img/java.png) center no-repeat ;
+  background-size: 100%;
+}
 }
 .TW{
   font-family: 'Socialico';
