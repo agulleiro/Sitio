@@ -398,6 +398,39 @@ header {
        border-radius: 20%;
        background-color: rgba(255,255,255,0.7);
        }*/ }
+  #quienesSomos .slider_container {
+    position: absolute;
+    overflow: hidden;
+    top: 450px;
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    z-index: 50;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top: 2px solid white;
+    border-bottom: 2px solid white; }
+    #quienesSomos .slider_container .slideContainer {
+      white-space: nowrap;
+      height: 100%;
+      text-align: right; }
+      #quienesSomos .slider_container .slideContainer .slide {
+        height: 100%;
+        display: inline-block;
+        background-color: #9370DB;
+        margin-right: -4px;
+        vertical-align: top;
+        background-size: 100%;
+        background-position: bottom; }
+        #quienesSomos .slider_container .slideContainer .slide p {
+          position: static;
+          color: white;
+          font-family: 'Quantico',cursive;
+          font-size: 20px;
+          width: auto;
+          font-size: 50px;
+          height: 80%;
+          margin: 20px;
+          text-align: center; }
   #quienesSomos #jodido {
     opacity: 1;
     position: absolute;
@@ -428,13 +461,6 @@ header {
       #quienesSomos #boxContinuar #continuar:hover {
         transition: background-color 1s ease;
         background-color: rgba(255, 255, 255, 0); }
-  #quienesSomos #franja {
-    width: 100%;
-    height: 150px;
-    background-color: black;
-    opacity: 0.4;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white; }
   #quienesSomos #prueba {
     position: absolute;
     top: 8%;
