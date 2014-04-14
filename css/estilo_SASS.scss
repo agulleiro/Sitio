@@ -72,7 +72,6 @@ a{  color: inherit;
 
 #contacto{
   position: relative;
-  top:-100px;
   background-image: url(../img/fondo4.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -383,12 +382,9 @@ header {
 
 #inicio{
  
-  position: static;
+  position: relative;
   z-index: 1;
-  
 
-  
- 
 
     #cajaNegra{ position: absolute;
                 width: 379px;
@@ -776,13 +772,14 @@ header {
 
 #tecnologias{
   position: relative;
+  
 
 .tecnologias{
   position: absolute;
   top: 0;
   left:0;
   background-image: url(../img/tecno01.jpg);
-  background-size: 110%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
