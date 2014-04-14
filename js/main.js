@@ -20,7 +20,7 @@ $("#contacto").hover(function(){
 
 function init()
 {
-
+  alert("Ancho: "+ $('body').width() + "Alto: "+$('body').height());
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
     $('#quienesSomos').localScroll(); 
