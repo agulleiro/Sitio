@@ -1,4 +1,5 @@
 var pos=1;
+var intv;
 
 $(document).on('ready', init);
 $("#contacto").hover(function(){
@@ -20,26 +21,25 @@ $("#contacto").hover(function(){
 
 function init()
 {
-  alert("Ancho: "+ $('body').width() + "Alto: "+$('body').height());
+//alert($('#portfolio').height());
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
-    $('#quienesSomos').localScroll(); 
+    $('#quienesSomos').localScroll();
+
+  responsiveWali();
+   
+  
     Aparecerobjetos();  // probando funcion para aprender
- 
-
-    var width = $('.slider_container').width();
-  $('.slide').each(function(i,e){
-          $(e).css('width', width);
-
-          
-    });
+   intv = setInterval(slide,5000);  
+  
+  
       
-      
+     
 
 
    
  
-      var intv = setInterval(slide,5000); 
+     
        
     
     
@@ -131,6 +131,7 @@ function scrollMouse(){
 }
 
 function slide(){
+ // alert("ejecutando "+pos);
   
 /*$('.slideContainer').css({
   'margin-left': -(pos* $('.slider_container').width())+'px'
@@ -153,3 +154,65 @@ function slide(){
   }
 }
 
+
+function responsiveWali(){
+
+
+//::::::::RESPONSIVE DE: "EXPERIENCIA,COMPROMISO,DEDICACION" EN QUIENES SOMOS::::::::::::::::::
+ var altura = $('.parrafo').height();
+ $('.parrafo').css('line-height',altura+'px'); 
+
+//:::::::: RESPONSIVE TEXTOS DE QUIENES SOMOS::::::::::
+ $("#tituloPre").fitText();
+ $(".TextoPre").fitText(2.5,{minFontSize: '14.5px'});  
+
+ 
+//:::::::: RESPONSIVE SLIDER DE QUIENES SOMOS:::::::::::::::
+ var width = $('.slider_container').width();
+ $('.slide').each(function(i,e){
+          $(e).css('width', width);
+
+          
+    }); 
+
+ $( window ).resize(function() {
+        altura = $('.parrafo').height(); 
+        $('.parrafo').css('line-height',altura+'px');
+      width = $('.slider_container').width();
+
+      $('.slide').each(function(i,e){
+          $(e).css('width', width);   
+    });
+
+       
+      
+      pos=0;
+      slide();
+      clearInterval(intv);
+      intv = setInterval(slide,5000);      
+    });
+
+
+
+ //::::::::: RESPONSIVE ACORDEON ::::::::::::::::
+
+    /*   var refAltura //764
+       var refAncho  // 320
+
+        refAltura = $('.acordeon').height();
+        refAncho = $('.acordeon').width();
+
+        $('.acordeon ul li').css({
+
+           'width': refAncho*0.24+'px'
+
+          });
+
+        $('.acordeon ul li a img').css({
+          'width': refAncho*0.83+'px',
+          'height': refAltura
+
+        });
+*/
+
+}
