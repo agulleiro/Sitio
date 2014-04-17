@@ -18,8 +18,7 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-width: 900px;
-  min-height: 700px; }
+  min-width: 900px; }
 
 a {
   color: inherit;
@@ -69,16 +68,17 @@ a {
   background-image: url(../img/fondo4.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  /* min-height: 899px;*/
   background-color: #3686b1;
   /*Probando color degradiente*/
   background: #c5deea;
-  background: -moz-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #c5deea), color-stop(31%, #8abbd7), color-stop(100%, #066dab));
-  background: -webkit-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
-  background: -o-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
-  background: -ms-linear-gradient(left, #c5deea 0%, #8abbd7 31%, #066dab 100%);
-  background: linear-gradient(to right, #c5deea 0%, #8abbd7 31%, #066dab 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c5deea', endColorstr='#066dab',GradientType=1 );
+  background: -moz-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(197, 222, 234, 0.6)), color-stop(31%, rgba(138, 187, 215, 0.6)), color-stop(100%, rgba(6, 109, 171, 0.6)));
+  background: -webkit-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
+  background: -o-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
+  background: -ms-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
+  background: linear-gradient(to right, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(197, 222, 234, 0.6)', endColorstr='rgba(6, 109, 171, 0.6)',GradientType=1 );
   /*
     background: #d0e4f7;
     background: -moz-linear-gradient(45deg,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
@@ -181,8 +181,10 @@ a {
   border-radius: 20px;
   font-weight: bold;
   z-index: 5;
+  -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease; }
   #continuar-a-portfolio:hover {
+    -webkit-transition: background-color 1s ease;
     transition: background-color 1s ease;
     background-color: rgba(255, 255, 255, 0); }
 
@@ -250,17 +252,15 @@ footer {
   width: 100%;
   height: 100%; }
 
-.fullScreen90 {
+.fullScreen2 {
   width: 100%;
-  height: 90%; }
-
-.fullScreen110 {
-  width: 100%;
-  height: 110%; }
+  height: 100%;
+  min-height: 800px; }
 
 .screen80 {
   width: 100%;
-  height: 80%; }
+  height: 80%;
+  min-height: 640px; }
 
 .Gplus {
   font-family: 'Socialico';
@@ -285,11 +285,15 @@ header {
     display: inline-block;
     cursor: pointer;
     border-radius: 10px;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
     transition: all 0.2s linear; }
     header nav ul li:hover {
       color: #000;
       font-size: 2em;
-      transition: all 0.2s linear; }
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear; }
 
 .IN {
   font-family: 'Socialico';
@@ -306,12 +310,13 @@ header {
   background-image: url(../img/fondoBsAs.jpg);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 700px;
+  min-height: 600px;
   min-width: 900px; }
 
 #inicio {
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  min-height: 600px; }
   #inicio #cajaNegra {
     position: absolute;
     width: 379px;
@@ -321,6 +326,8 @@ header {
     right: 0;
     background-color: rgba(0, 0, 0, 0.59);
     height: 100%;
+    -webkit-transition: all 2s linear;
+    -moz-transition: all 2s linear;
     transition: all 2s linear; }
     #inicio #cajaNegra #mensaje {
       position: relative;
@@ -365,7 +372,9 @@ header {
         text-align: center;
         top: 25%;
         opacity: 0;
-        transition: all 2s linear; }
+        transition: all 2s linear;
+        -webkit-transition: all 2s linear;
+        -moz-transition: all 2s linear; }
       #inicio #cajaNegra #mensaje #frase2 {
         position: absolute;
         left: 0;
@@ -374,7 +383,9 @@ header {
         bottom: 10%;
         height: 25%;
         opacity: 0;
-        transition: all 2s linear; }
+        transition: all 2s linear;
+        -webkit-transition: all 2s linear;
+        -moz-transition: all 2s linear; }
       #inicio #cajaNegra #mensaje #frase3 {
         position: absolute;
         margin: 0 auto;
@@ -385,7 +396,38 @@ header {
         width: auto;
         top: 43%;
         opacity: 0;
-        transition: all 2s linear; }
+        transition: all 2s linear;
+        -webkit-transition: all 2s linear;
+        -moz-transition: all 2s linear; }
+  #inicio #boxContinuar {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    background-color: steelblue;
+    bottom: 0;
+    height: 10%;
+    border-bottom: 3px solid white;
+    text-align: center; }
+    #inicio #boxContinuar .continuar {
+      position: relative;
+      /* left:45%;
+       top: 20%;
+       left: 45%;*/
+      top: 34%;
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px 20px;
+      border: 3px solid white;
+      border-radius: 20px;
+      font-weight: bold;
+      color: white;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease; }
+      #inicio #boxContinuar .continuar:hover {
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        background-color: rgba(255, 255, 255, 0); }
 
 .logo {
   font-family: 'Seymour One', sans-serif;
@@ -417,7 +459,11 @@ header {
 #portfolio {
   position: relative;
   z-index: 1;
-  background-color: #cb5211;
+  /*min-height: 899px;*/
+  background-color: #fd3908;
+  border-top: 3px solid white;
+  /* background-image: url('../img/fondoNaranja.jpg');
+   background-size: 100% 100%;*/
   /*Estilo de las imagenes */
   /*Reduccion de los elementos no hovereados*/
   /* Efectos hover */ }
@@ -435,7 +481,7 @@ header {
       height: 0;
       border-top: 40px solid transparent;
       border-bottom: 30px solid transparent;
-      border-left: 70px solid #cb5211; }
+      border-left: 70px solid #fd3908; }
     #portfolio #cajablanca h2 {
       color: white;
       font-family: 'Quantico', sans-serif;
@@ -453,9 +499,9 @@ header {
     width: 764px;
     height: 320px;
     overflow: hidden;
-    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35); }
+   /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);*/ }
   #portfolio .acordeon ul li {
     position: relative;
     display: block;
@@ -464,8 +510,8 @@ header {
     /* atributos para mejorar el look*/
     border-left: 1px solid #888;
     box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
     /*Transiciones */
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -501,11 +547,46 @@ header {
   z-index: 1;
   background-color: #20B2AA;
   width: 100%;
-  border-top: 2px solid black; }
+  /*min-height: 899px;*/
+                   /*#boxContinuar{
+        position: absolute;
+        display: inline-block;
+        width: 100%;
+        background-color: $azulAcero;
+        top: 0;
+        height: 10%;
+        border-bottom: 3px solid white;
+        text-align: center;
+
+                      
+          .continuar{       
+                   
+
+                    position: relative;
+                   /* left:45%;
+                    top: 20%;
+                    left: 45%;--
+                    top: 28%;
+                  
+                    background-color: rgba(255,255,255,0.2);
+                    padding: 10px 20px;                
+                    border: 3px solid white;
+                    border-radius: 20px;
+                    font-weight: bold;
+                    color: white;
+                    transition: background-color 1s ease;
+                    transition: top 1s ease;   
+                    &:hover{
+                      transition: background-color 1s ease;
+                      background-color: rgba(255,255,255,0);
+                    }
+                       }
+
+          }*/ }
   #quienesSomos .slider_container {
     position: relative;
     overflow: hidden;
-    top: 15%;
+    top: 11%;
     width: 100%;
     min-height: 60px;
     height: 12%;
@@ -533,31 +614,9 @@ header {
           font-size: 50px;
           margin: 0;
           height: 100%; }
-  #quienesSomos #boxContinuar {
-    position: absolute;
-    width: 100%;
-    background-color: steelblue;
-    top: 0;
-    height: 10%;
-    border-bottom: 3px solid white; }
-    #quienesSomos #boxContinuar .continuar {
-      position: absolute;
-      left: 45%;
-      top: 20%;
-      left: 45%;
-      background-color: rgba(255, 255, 255, 0.2);
-      padding: 10px 20px;
-      border: 3px solid white;
-      border-radius: 20px;
-      font-weight: bold;
-      color: white;
-      transition: background-color 1s ease; }
-      #quienesSomos #boxContinuar .continuar:hover {
-        transition: background-color 1s ease;
-        background-color: rgba(255, 255, 255, 0); }
   #quienesSomos #quienSomos {
     position: absolute;
-    top: 8%;
+    top: 0%;
     width: 100%;
     height: 150px; }
   #quienesSomos #presentacionAbajo {
@@ -571,20 +630,22 @@ header {
     color: white; }
   #quienesSomos #presentacion {
     position: relative;
-    height: 300px;
+    height: 33%;
     width: 50%;
-    top: 10%;
+    top: 7%;
     margin-left: 7%;
     font-family: 'Quantico', sans-serif;
     color: white; }
     #quienesSomos #presentacion p {
       position: static;
-      min-height: 168px; }
+      /* min-height: 168px;*/ }
   #quienesSomos img {
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%; }
+  #quienesSomos h2 {
+    margin: 0; }
   #quienesSomos p {
     position: relative;
     width: 80%;
@@ -598,13 +659,15 @@ header {
   line-height: 4.1em; }
 
 .sombreado {
-  -webkit-box-shadow: 13px 17px 55px -3px rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 13px 17px 55px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 13px 17px 55px -3px rgba(0, 0, 0, 0.75); }
 
 #tecnologias {
   position: relative;
   background-color: #cb5211;
   z-index: 10;
   height: 100%;
+  min-height: 899px;
   background: url(../img/backgrounds/img09_1.jpg) no-repeat center; }
   #tecnologias .tecnologias {
     box-shadow: 0px 0px 15px #000;
@@ -627,7 +690,9 @@ header {
       display: inline-block;
       width: 24%;
       height: 150px;
-      -webkit-perspective: 1000px; }
+      -webkit-perspective: 1000px;
+      -ms-perspective: 1000px;
+      perspective: 1000px; }
       #tecnologias .tecnologias .box1 .cuadrado1 {
         position: relative;
         display: inline-block;
@@ -1270,6 +1335,14 @@ header {
     font-family: 'Londrina Outline', cursive; }
 
 /* ::::::::::::::::::::::::; FIN TECNOLOGIAS :::::::::::::::::::::::*/
+#reparacion {
+  display: none;
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/construccion.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
 .TW {
   font-family: 'Socialico';
   font-size: 5em;
@@ -1280,65 +1353,24 @@ header {
 
 /* ::::::::::::::::::::::::; USO DE LAS MEDIA QUERIES :::::::::::::::::::::::*/
 @media screen and (max-width: 300px) {
-  header {
-    font-size: 12px; }
-
-  header nav ul li {
-    display: block; }
-
-  header nav ul li:hover {
-    font-size: 14px; }
-
-  header nav ul li:nth-child(2),
-  header nav ul li:nth-child(3),
-  header nav ul li:nth-child(4) {
+  #inicio, #quienesSomos, #portfolio, #tecnologias, #contacto, #fondo, footer, header {
     display: none; }
 
-  #inicio #cajaNegra #mensaje {
-    font-size: 10px;
-    top: 100px; }
+  html, body {
+    min-width: 0px;
+    width: 300px; }
 
-  .fullScreen {
-    height: 100%; }
-
-  .fullScreen110 {
-    height: 100%; }
-
-  .fullScreen90 {
-    height: 100%; }
-
-  #quienesSomos {
+  #reparacion {
+    display: block; } }
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #inicio, #quienesSomos, #portfolio, #tecnologias, #contacto, #fondo, footer, header {
     display: none; }
 
-  #portfolio {
-    display: none; }
+  html, body {
+    min-width: 320px;
+    max-width: 480px;
+    width: 100%; }
 
-  #tecnologias {
-    display: none; }
-
-  #contacto {
-    position: absolute;
-    margin: 0;
-    z-index: 1000;
-    box-shadow: 0px 0px 15px #000; }
-
-  footer {
-    position: fixed;
-    bottom: 0;
-    height: 180px;
-    font-size: 12px;
-    z-index: 55; }
-
-  #inicio #cajaNegra #mensaje img {
-    margin-top: 20px;
-    margin-bottom: 20px; }
-
-  .comentarioContacto {
-    font-size: 15px;
-    height: 50px;
-    width: 300px;
-    padding: 0;
-    text-align: left; }
-
-  .FB, .TW, .Gplus, .IN {
-    font-size: 50px; } }
+  #reparacion {
+    display: block; } }
