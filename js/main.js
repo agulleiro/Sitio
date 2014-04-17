@@ -21,7 +21,7 @@ $("#contacto").hover(function(){
 
 function init()
 {
-//alert($('#portfolio').height());
+alert($('body').height());
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
     $('#quienesSomos').localScroll();
@@ -164,7 +164,7 @@ function responsiveWali(){
 
 //:::::::: RESPONSIVE TEXTOS DE QUIENES SOMOS::::::::::
  $("#tituloPre").fitText();
- $(".TextoPre").fitText(2.5,{minFontSize: '14.5px'});  
+ $(".TextoPre").fitText(2.5,{minFontSize: '14.5px',maxFontSize: '20.2px'});  
 
  
 //:::::::: RESPONSIVE SLIDER DE QUIENES SOMOS:::::::::::::::
