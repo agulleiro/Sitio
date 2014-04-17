@@ -18,7 +18,8 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-width: 320px; }
+  min-width: 900px;
+  min-height: 700px; }
 
 a {
   color: inherit;
@@ -273,6 +274,7 @@ header {
   z-index: 10;
   background-color: steelblue;
   text-align: center;
+  min-width: 900px;
   border-radius: 0em 0em 2em 2em; }
   header nav ul li {
     color: #F7F7F7;
@@ -298,11 +300,12 @@ header {
 #fondo {
   position: fixed;
   overflow: hidden;
-  height: 101%;
   z-index: 0;
   background-image: url(../img/fondoBsAs.jpg);
-  background-size: 100% 90%;
-  background-repeat: no-repeat; }
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  min-width: 900px; }
 
 #inicio {
   position: relative;
@@ -311,47 +314,76 @@ header {
     position: absolute;
     width: 379px;
     min-width: 100px;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.59);
     height: 100%;
     transition: all 2s linear; }
     #inicio #cajaNegra #mensaje {
+      position: relative;
+      display: block;
       height: 100%;
-      position: absolute;
-      width: 100%;
-      min-width: 100px;
-      margin-right: auto;
-      margin-left: auto;
-      left: 0;
-      right: 0;
-      text-align: center;
       font-family: 'Quantico', sans-serif;
       line-height: 1.2em;
-      color: white;
       font-size: 24px;
-      cursor: pointer; }
+      text-align: center;
+      color: white;
+      cursor: pointer;
+       /*       #frase1{margin-top: 60%;
+                      margin-bottom: 0;
+                      
+                      
+                      opacity: 1;
+                      transition:all 2s linear;}
+              #frase2{
+                      
+                      margin: 0;
+                      opacity: 1;
+                      transition:all 2s linear;} 
+              #frase3{
+                      
+                      
+                      opacity: 1;
+                      transition:all 2s linear;} 
+
+
+                  img{margin-bottom: 80px;
+                      margin-top: 80px;
+                      width: 70%;
+                      min-width: 100px;
+                      top:30%;
+                      height: auto;
+                    
+                    } */ }
       #inicio #cajaNegra #mensaje #frase1 {
-        margin-top: 60%;
-        margin-bottom: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 25%;
         opacity: 0;
         transition: all 2s linear; }
       #inicio #cajaNegra #mensaje #frase2 {
-        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: 10%;
+        height: 25%;
         opacity: 0;
         transition: all 2s linear; }
       #inicio #cajaNegra #mensaje #frase3 {
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        height: 20%;
+        min-height: 100px;
+        width: auto;
+        top: 43%;
         opacity: 0;
         transition: all 2s linear; }
-      #inicio #cajaNegra #mensaje img {
-        margin-bottom: 80px;
-        margin-top: 80px;
-        width: 70%;
-        min-width: 100px;
-        top: 30%;
-        height: auto; }
 
 .logo {
   font-family: 'Seymour One', sans-serif;
@@ -412,7 +444,10 @@ header {
   #portfolio .acordeon {
     position: absolute;
     top: 30%;
-    left: 30%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    /*1263 899*/
     width: 764px;
     height: 320px;
     overflow: hidden;
@@ -444,7 +479,8 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    width: 680px; }
+    width: 680px;
+    min-width: 340px; }
   #portfolio .tituloImagen a {
     display: block;
     color: #fff;
@@ -462,11 +498,12 @@ header {
   width: 100%;
   border-top: 2px solid black; }
   #quienesSomos .slider_container {
-    position: absolute;
+    position: relative;
     overflow: hidden;
-    top: 500px;
+    top: 15%;
     width: 100%;
-    height: 120px;
+    min-height: 60px;
+    height: 12%;
     left: 0px;
     z-index: 50;
     background-color: rgba(255, 255, 255, 0.5);
@@ -474,25 +511,23 @@ header {
     border-bottom: 2px solid white; }
     #quienesSomos .slider_container .slideContainer {
       white-space: nowrap;
-      height: 100%; }
+      height: 100%;
+      overflow: hidden; }
       #quienesSomos .slider_container .slideContainer .slide {
         height: 100%;
         display: inline-block;
         background-color: #9370DB;
         margin-right: -4px;
-        vertical-align: top;
         background-size: 100%;
         background-position: bottom; }
         #quienesSomos .slider_container .slideContainer .slide p {
-          position: static;
           color: white;
           font-family: 'Quantico',cursive;
-          font-size: 20px;
+          text-align: center;
           width: auto;
           font-size: 50px;
-          height: 80%;
-          margin: 20px;
-          text-align: center; }
+          margin: 0;
+          height: 100%; }
   #quienesSomos #boxContinuar {
     position: absolute;
     width: 100%;
@@ -521,39 +556,34 @@ header {
     width: 100%;
     height: 150px; }
   #quienesSomos #presentacionAbajo {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 300px;
+    position: relative;
+    top: 15%;
+    left: 50%;
+    height: 135px;
     width: 50%;
-    margin-left: 7%;
     font-family: 'Quantico', sans-serif;
     font-size: 30px;
     color: white; }
   #quienesSomos #presentacion {
+    position: relative;
     height: 300px;
     width: 50%;
-    margin-top: 13%;
-    margin-bottom: 4%;
+    top: 10%;
     margin-left: 7%;
     font-family: 'Quantico', sans-serif;
-    font-size: 30px;
     color: white; }
     #quienesSomos #presentacion p {
-      position: static; }
+      position: static;
+      min-height: 168px; }
   #quienesSomos img {
     position: absolute;
     z-index: -1;
     width: 100%;
     height: 100%; }
-  #quienesSomos h1 {
-    text-shadow: 5px 5px 0px #000; }
   #quienesSomos p {
     position: relative;
     width: 80%;
-    left: 10%;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
     text-align: justify; }
 
 .socialFooter {

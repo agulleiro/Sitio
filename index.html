@@ -28,6 +28,9 @@
         <link href='http://fonts.googleapis.com/css?family=Nova+Square' rel='stylesheet' type='text/css'>
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/jquery.fittext.js"></script>
     </head>
     <body>
         
@@ -58,9 +61,9 @@
         <section  class="fullScreen90" id="inicio">
             <div id="cajaNegra">
                 <div id="mensaje">
-                     <h2 id="frase1">Nosotros Desarrollamos</h2>
+                    <span id="frase1"> <h2 >Nosotros Desarrollamos</h2></span>
                      <img id="frase3" src="img/skysoft3.png" alt="SkySoft"> 
-                     <h2 id="frase2">Ustedes <br>Nos eligen</h2>
+                    <div id="frase2"><h2 id="fit">Ustedes <br>Nos eligen</h2></div>
                 </div> 
             </div>
             
@@ -75,24 +78,25 @@
                 <a class="continuar" href="#quienSomos">Continuar</a>
            </div>
            <div id="presentacion">
-                <h2>Hola.</h2>
-                <p>Somos <b>Lucas Maximiliano Alderete</b> y <b>Walter Ariel Dotto.</b> Nos dedicamos al diseño y programacion de aplicaciones de escritorio y páginas web, por eso juntos formamos <b>SkySoft</b>. Estamos ubicados en <b>Buenos Aires, Argentina </b>y actualmente cursamos <b>Ingenieria en Informática en la Universidad Nacional de La Matanza.</b>
+                <h2 id="tituloPre">Hola.</h2>
+                <p class="TextoPre">Somos <b>Lucas Maximiliano Alderete</b> y <b>Walter Ariel Dotto.</b> Nos dedicamos al diseño y programacion de aplicaciones de escritorio y páginas web, por eso juntos formamos <b>SkySoft</b>. Estamos ubicados en <b>Buenos Aires, Argentina </b>y actualmente cursamos <b>Ingenieria en Informática en la Universidad Nacional de La Matanza.</b>
                 Nuestro principal objetivo es alcanzar y mantener el máximo nivel profesional.<p>
             </div>
+             <div class="slider_container ">
+                        <div class="slideContainer">
+                           <div class="slide" style="background-color:#9370DB" ><p class="parrafo">Experiencia</p></div>
+                           <div class="slide" style="background-color:#FF6347"><p class="parrafo">Compromiso</p></div>
+                           <div class="slide" style="background-color:#70DB93" ><p class="parrafo">Dedicación</p></div>
+                           
+                   </div> 
+            </div> 
             <div id="presentacionAbajo">
-                <p>Para ello damos total prioridad a las peticiones del cliente, trabajando en cada detalle con el fin de fomentar la <b>confianza, seguridad y compromiso con cada uno de ustedes.</b>
+                <p  class="TextoPre">Para ello damos total prioridad a las peticiones del cliente, trabajando en cada detalle con el fin de fomentar la <b>confianza, seguridad y compromiso con cada uno de ustedes.</b>
                 </p>
             </div>
             <div id="quienSomos"></div>
            
-            <div class="slider_container ">
-                        <div class="slideContainer">
-                           <div class="slide" style="background-color:#9370DB" ><p>Experiencia</p></div>
-                           <div class="slide" style="background-color:#FF6347"><p>Compromiso</p></div>
-                           <div class="slide" style="background-color:#70DB93" ><p>Dedicación</p></div>
-                           
-                   </div> 
-            </div>
+          
                                
         </section>
 
@@ -136,12 +140,12 @@
                         </li>
                     </ul>
 
-            </div>      
+            </div>    
 
         </section>
           
         <!-- :::::::::::::::: TECNOLOGIAS ::::::::::::::::::::::::-->
-        <section  class="fullScreen"  id="tecnologias">
+         <section  class="fullScreen"  id="tecnologias">
         
     <div class="tecnologias">
         <div class="box1">
@@ -194,13 +198,15 @@
                     .NET / C#
                 </div>  
             </div>  
-            </div>
+
+        </div>
 
         <div class="box8">
             <div class="cuadrado8 java">
                 <div class="texto">
                     Java
                 </div>  
+
             </div>  
         </div>
         <div class="box9">
@@ -223,7 +229,7 @@
                 <div class="carita"></div>
             </div>
             <div class="comentarioContacto">Para más informacion, presupuestos o consultas envianos un comentario. Nos podremos en contacto contigo. Vamos a agregar mas texto para ver si se acomoda xq no me gusta tanto espacio vacio.Un poco mas de letras para que vaya tomando mas forma esta cosa. (a mejorar)</div>
-            <!--<div class="imgContacto"></div>-->
+            <!--<div class="imgContacto"></div>
             <div class="principalComentario">
                 <form action="enviarMail.php" method="post" id="formulario">
                         <input type="text" name="nombre" class="formInput caja" placeholder="Nombre">
@@ -233,7 +239,7 @@
                         <textarea name="comentario" placeholder="Comentario" class="formTA"></textarea>
                         <input type="submit" value="Enviar comentario" class="enviarComentario">
                 </form>
-            </div>
+            </div>-->
         </section>
         
 
