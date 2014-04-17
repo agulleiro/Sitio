@@ -1,4 +1,3 @@
-@charset "CP850";
 @font-face {
   font-family: "Bebas-Neue";
   font-style: normal;
@@ -34,6 +33,7 @@ a {
 .comentarioContacto {
   float: left;
   width: 30%;
+  /*Pasar a EM*/
   height: 200px;
   font-family: 'Englebert', sans-serif;
   font-size: 30px;
@@ -42,28 +42,8 @@ a {
   padding-left: 3%;
   text-shadow: 0px 0px 4px #FFF; }
 
-.imgContacto {
-  /*LUQI FIJATE QUE ESTA IMAGEN SOBRE PASA EL ANCHO DE LA WEB Y QUEDA
-    MAL*/
-  top: 48%;
-  left: 9.5%;
-  position: relative;
-  display: none;
-  float: right;
-  width: 30%;
-  height: 250px;
-  background: url(../img/mensaje02.png) no-repeat;
-  background-size: 65%;
-  z-index: 100000000;
-  transform: rotate(-30deg);
-  -ms-transform: rotate(-30deg);
-  -webkit-transform: rotate(-30deg);
-  opacity: 0.59;
-  overflow: visible; }
-
 #contacto {
   z-index: 90;
-  box-shadow: 0px 0px 15px #000;
   position: relative;
   background-image: url(../img/fondo4.jpg);
   background-size: 100% 100%;
@@ -93,21 +73,23 @@ a {
   /*background-image: url(../img/fondo4.jpg);*/
   background-size: 100%;
   padding-top: 5%;
-  text-align: center; }
+  background: url(../img/backgrounds/pruebas/contacto01.jpg) no-repeat;
+  text-align: center;
+  padding-top: 2em; }
   #contacto .triangulo {
     width: 0;
     height: 0;
     opacity: 0.7;
-    border-top: 60px solid transparent;
-    border-left: 130px solid #262626;
-    border-bottom: 60px solid transparent; }
+    border-top: 2.31em solid transparent;
+    border-left: 5em solid #262626;
+    border-bottom: 2.31em solid transparent; }
     #contacto .triangulo .palabraContacto {
       line-height: 4em;
       display: block;
       top: -2em;
-      left: 1500px;
+      left: 2000px;
       position: relative; }
-  #contacto .subContacto {
+  #contacto .franjaDeContacto {
     width: 100%;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -116,34 +98,21 @@ a {
     font-weight: bolder;
     font-size: 26px;
     color: #FBFBF5;
-    border-radius: 0 0.5em 0.5em 0;
     overflow: hidden;
-    transition: all 1.5s; }
-    #contacto .subContacto .carita {
-      width: 100px;
-      height: 100px;
+    transition: all 1.8s; }
+    #contacto .franjaDeContacto .movimientoSobre {
+      width: 5em;
+      height: 3.5em;
       display: block;
       background: url(../img/mensaje03_editado.png);
       background-size: 100%;
       background-position: center;
       background-repeat: no-repeat;
       float: right;
-      margin-right: 500px;
-      -webkit-transform: rotate(-45deg);
-      /*transition:all 1.5s ease;
-      &:hover{
-      -webkit-transform:rotate(0deg);
-      };
-      
-      /*transform:rotate(0deg);
-      -ms-transform:rotate(0deg);
-      */ }
+      margin-top: 3.8em;
+      margin-right: 20em;
+      -webkit-transform: rotate(-45deg); }
   #contacto #formulario {
-    /* Se cambian valores para acomodar con más libertad
-        top: -1%;
-        margin-top: 5%;
-        display: inline-block;
-    */
     top: 330px;
     left: 550px;
     display: block;
@@ -202,8 +171,6 @@ footer {
   font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 100%;
-  /* //width: 98%;
-   //margin-left: 1%;*/
   z-index: 10;
   position: absolute;
   background: url(../img/backgrounds/footer/footer02.jpg) no-repeat;
@@ -460,7 +427,10 @@ header {
   position: relative;
   z-index: 1;
   /*min-height: 899px;*/
-  background-color: #fd3908;
+  /*background-color: rgb(161,70,103);*/
+  /* background-image: url('../img/volteada.jpg');
+   background-size: 100% 100%;*/
+  background: url(../img/volteada3.jpg) no-repeat center;
   border-top: 3px solid white;
   /* background-image: url('../img/fondoNaranja.jpg');
    background-size: 100% 100%;*/
@@ -689,7 +659,7 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       -webkit-perspective: 1000px;
       -ms-perspective: 1000px;
       perspective: 1000px; }
@@ -697,7 +667,7 @@ header {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -754,13 +724,13 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box2 .cuadrado2 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -818,13 +788,13 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .boxExtra .cuadradoExtra {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -882,13 +852,13 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box3 .cuadrado3 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -946,14 +916,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box4 .cuadrado4 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -1011,14 +981,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box5 .cuadrado5 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -1076,7 +1046,7 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box6 .cuadrado6 {
@@ -1141,14 +1111,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box7 .cuadrado7 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -1206,14 +1176,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 150px;
+      height: 9.345em;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box8 .cuadrado8 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;

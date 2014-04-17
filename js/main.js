@@ -4,18 +4,18 @@ var intv;
 $(document).on('ready', init);
 $("#contacto").hover(function(){
   $(".palabraContacto").css("transition","all 1.8s ease");
-  $(".palabraContacto").css("left","-130px");
+  $(".palabraContacto").css("left","-5em");
 
-    $(".carita").css("transition","all 1.5s ease");
-    $(".carita").css("margin-right","25px");
-    $(".carita").css("margin-top","-100px");
-    $(".carita").css("-webkit-transform","rotate(0deg)");
+    $(".movimientoSobre").css("transition","all 1.5s ease");
+    $(".movimientoSobre").css("margin-right","0.95em");
+    $(".movimientoSobre").css("margin-top","-3.8em");
+    $(".movimientoSobre").css("-webkit-transform","rotate(0deg)");
 },function(){
   
-    $(".carita").css("transition","all 1.2s");	
-    $(".carita").css("margin-top","100px");
-    $(".carita").css("margin-right","500px");
-    $(".carita").css("-webkit-transform","rotate(-45deg)");
+    $(".movimientoSobre").css("transition","all 1.2s");	
+    $(".movimientoSobre").css("margin-top","3.8em");
+    $(".movimientoSobre").css("margin-right","20em");
+    $(".movimientoSobre").css("-webkit-transform","rotate(-45deg)");
   
 });
 
@@ -33,9 +33,6 @@ function init()
    intv = setInterval(slide,5000);  
   
   
-      
-     
-
 
    
  
