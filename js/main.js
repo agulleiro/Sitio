@@ -21,7 +21,7 @@ $("#contacto").hover(function(){
 
 function init()
 {
-alert($('#portfolio').height());
+//alert($('#portfolio').height());
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
     $('#quienesSomos').localScroll();
