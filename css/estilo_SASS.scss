@@ -40,90 +40,39 @@ a{  color: inherit;
 {
   float: left;
   width: 30%;
+  /*Pasar a EM*/
   height: 200px;
-                       // font-family: 'Alegreya Sans', sans-serif;
-                       font-family: 'Englebert', sans-serif;
+  font-family: 'Englebert', sans-serif;
   font-size: 30px;
   text-align: left;
   padding-top: 10%;
   padding-left: 3%;
   text-shadow:0px 0px 4px #FFF;
 }
-
-  .imgContacto{  /*LUQI FIJATE QUE ESTA IMAGEN SOBRE PASA EL ANCHO DE LA WEB Y QUEDA
-                   MAL*/
-    
-    top: 48%;
-    left: 9.5%;
-    position:relative;
-    display: none;
-    float: right;
-    width: 30%;
-    height: 250px;
-    background: url(../img/mensaje02.png) no-repeat ;
-    background-size: 65%;
-    z-index: 100000000;
-    transform:rotate(-30deg);
-    -ms-transform:rotate(-30deg);
-    -webkit-transform:rotate(-30deg);
-    opacity: 0.59;
-    overflow: visible;
-  }
  
 #contacto{
-    z-index: 90;
-  box-shadow: 0px 0px 15px #000;
+  z-index: 90;
   position: relative;
-  background-image: url(../img/fondo4.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-
-  background-color:rgba(54,134,177,1.0);
-  /*Probando color degradiente*/
-  background: #c5deea;
-  background: -moz-linear-gradient(left,  #c5deea 0%, #8abbd7 31%, #066dab 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c5deea), color-stop(31%,#8abbd7), color-stop(100%,#066dab));
-  background: -webkit-linear-gradient(left,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-  background: -o-linear-gradient(left,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-  background: -ms-linear-gradient(left,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-  background: linear-gradient(to right,  #c5deea 0%,#8abbd7 31%,#066dab 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5deea', endColorstr='#066dab',GradientType=1 );
-
-/*
-  background: #d0e4f7;
-  background: -moz-linear-gradient(45deg,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea));
-  background: -webkit-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-  background: -o-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-  background: -ms-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-  background: linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
-  */
-  /* Suspendemos imagen por el momento */ 
-  /*background-image: url(../img/fondo4.jpg);*/
-  background-size: 100%;
-
-  padding-top: 5%;
+  background: url(../img/backgrounds/pruebas/contacto01.jpg) no-repeat ;
   text-align: center;
-
-
+  padding-top: 2em;
     .triangulo{ 
     width: 0;
     height: 0;
     opacity: 0.7; 
-    border-top: 60px solid transparent;
-    border-left: 130px solid #262626;
-    border-bottom: 60px solid transparent;
+    border-top: 2.31em solid transparent;
+    border-left: 5em solid #262626;
+    border-bottom: 2.31em solid transparent;
       .palabraContacto
       {
         line-height: 4em;
         display: block;
         top:-2em;
-        left:1500px;
+        left:2000px;
         position: relative;
         }
     }
-    .subContacto{
+    .franjaDeContacto{
       width: 100%;
       height: 120px;
       background-color: rgba(255,255,255,0.4);
@@ -132,46 +81,33 @@ a{  color: inherit;
       font-weight: bolder;
       font-size: 26px;
       color: #FBFBF5;
-      border-radius: 0 0.5em 0.5em 0;
       overflow: hidden;
-      transition:all 1.5s;
+      transition:all 1.8s;
         &:hover{
           };
-      .carita{
-        width: 100px;
-        height: 100px;
+      .movimientoSobre{
+        width: 5em;
+        height: 3.5em;
         display: block;
         background: url(../img/mensaje03_editado.png);
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
         float: right;
-        margin-right: 500px;
+        margin-top: 3.8em;
+        margin-right: 20em;
         -webkit-transform:rotate(-45deg);
-        /*transition:all 1.5s ease;
-        &:hover{
-        -webkit-transform:rotate(0deg);
-        };
-        
-        /*transform:rotate(0deg);
-        -ms-transform:rotate(0deg);
-        */
       }
     }
     #formulario{
-    /* Se cambian valores para acomodar con más libertad
-        top: -1%;
-        margin-top: 5%;
-        display: inline-block;
-    */
-    top: 330px;
-    left: 550px;
-    display: block;
-    position: absolute;
-    text-align: center;
-    width: 550px;
-    height: 460px; 
-    }
+      top: 330px;
+      left: 550px;
+      display: block;
+      position: absolute;
+      text-align: center;
+      width: 550px;
+      height: 460px; 
+      }
 }
 
 .caja {
@@ -232,18 +168,13 @@ font-family: 'Alegreya Sans', sans-serif;
 }
 
 footer{
-
   font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 100%;
- /* //width: 98%;
-  //margin-left: 1%;*/
   z-index: 10;
   position:absolute;
-  
   background: url(../img/backgrounds/footer/footer02.jpg) no-repeat;
   background-size: 100%;
-
   background-color: #FFF;
   overflow: hidden;
   color:#6E6E6E;
@@ -283,11 +214,9 @@ footer{
   margin-bottom: 15px;
 }
 .formInput{
-
   
            margin-top: 15px;
            margin-right: 5px;
-           
            border-radius: 15px;
            height: 35px;
            width: 230px;
@@ -850,14 +779,14 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
+    height: 9.345em;
     -webkit-perspective: 1000px;
 
       .cuadrado1{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -922,13 +851,13 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
+    height: 9.345em;
     -webkit-perspective: 1000px;
       .cuadrado2{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -992,13 +921,13 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
+    height: 9.345em;
     -webkit-perspective: 1000px;
       .cuadradoExtra{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -1063,17 +992,14 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
-    //overflow: hidden;
+    height: 9.345em;
     -webkit-perspective: 1000px;
       .cuadrado3{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
-        //overflow: hidden;
-        //background: url(img/html5.png) center no-repeat ;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         transition: all 0.5s;
@@ -1138,18 +1064,15 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
-        margin-top: 100px;
-    //overflow: hidden;
+    height: 9.345em;
+    margin-top: 100px;
     -webkit-perspective: 1000px;
       .cuadrado4{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
-        //overflow: hidden;
-        //background: url(img/html5.png) center no-repeat ;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         transition: all 0.5s;
@@ -1214,18 +1137,15 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
-    //overflow: hidden;
-        margin-top: 100px;
+    height: 9.345em;
+    margin-top: 100px;
     -webkit-perspective: 1000px;
       .cuadrado5{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
-        //overflow: hidden;
-        //background: url(img/html5.png) center no-repeat ;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         transition: all 0.5s;
@@ -1290,9 +1210,8 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
-        margin-top: 100px;
-    //overflow: hidden;
+    height: 9.345em;
+    margin-top: 100px;
     -webkit-perspective: 1000px;
       .cuadrado6{
         position: relative;
@@ -1366,18 +1285,15 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
-        margin-top: 100px;
-    //overflow: hidden;
+    height: 9.345em;
+    margin-top: 100px;
     -webkit-perspective: 1000px;
       .cuadrado7{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
-        //overflow: hidden;
-        //background: url(img/html5.png) center no-repeat ;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         transition: all 0.5s;
@@ -1442,18 +1358,15 @@ font-family: 'Londrina Outline', cursive;
     position: relative;
     display: inline-block;
     width:24%;
-    height: 150px;
-    //overflow: hidden;
-        margin-top: 100px;
+    height: 9.345em;
+    margin-top: 100px;
     -webkit-perspective: 1000px;
       .cuadrado8{
         position: relative;
         display: inline-block;
         width:100%;
-        height: 150px;
+        height: 9.345em;
         background-color: black;
-        //overflow: hidden;
-        //background: url(img/html5.png) center no-repeat ;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         transition: all 0.5s;
