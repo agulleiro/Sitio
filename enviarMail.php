@@ -4,8 +4,8 @@ if(isset($_POST['asunto']) && isset($_POST['comentario']) && isset($_POST['nombr
 	!empty($_POST['asunto']) && !empty($_POST['comentario']) && !empty($_POST['nombre']) && !empty($_POST['email']))
 	{
 
-		$mailLucas="lucasm.alderete@gmail.com";
-		$mailWalter="walter.dotto91@gmail.com";
+		$mailLucas="lucas.alderete@skysoft.com.ar";
+		$mailWalter="walter.dotto@skysoft.com.ar";
 		$desde="From:"."SkySoft";
 		$asunto="[Comentario SkySoft] ".$_POST['asunto'];
 		$mensaje=" Nombre: ".$_POST['nombre']."\nEmail: ".$_POST['email']."\nMensaje: ".$_POST['comentario'];

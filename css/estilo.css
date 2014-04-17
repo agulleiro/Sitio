@@ -62,6 +62,8 @@ a {
   overflow: visible; }
 
 #contacto {
+  z-index: 90;
+  box-shadow: 0px 0px 15px #000;
   position: relative;
   background-image: url(../img/fondo4.jpg);
   background-size: 100% 100%;
@@ -201,12 +203,12 @@ footer {
    //margin-left: 1%;*/
   z-index: 10;
   position: absolute;
-  background-image: url(../img/textura.jpg);
-  background-color: #151515;
+  background: url(../img/backgrounds/footer/footer02.jpg) no-repeat;
+  background-size: 100%;
+  background-color: #FFF;
   overflow: hidden;
   color: #6E6E6E;
   text-align: center;
-  border-radius: 0.45em 0.45em 0.33em 0.33em;
   font-size: 18px; }
   footer li {
     display: inline-block;
@@ -270,7 +272,7 @@ footer {
 header {
   width: 100%;
   position: fixed;
-  z-index: 10;
+  z-index: 100000000000000000000;
   background-color: steelblue;
   text-align: center;
   border-radius: 0em 0em 2em 2em; }
@@ -455,6 +457,9 @@ header {
   #portfolio .acordeon ul li:hover {
     width: 640px; }
 
+.textoResponsive {
+  font-family: 'Londrina Outline', cursive; }
+
 #quienesSomos {
   position: relative;
   z-index: 1;
@@ -567,18 +572,18 @@ header {
 
 #tecnologias {
   position: relative;
-  height: 150%; }
+  background-color: #cb5211;
+  z-index: 10;
+  height: 100%;
+  background: url(../img/backgrounds/img09_1.jpg) no-repeat center; }
   #tecnologias .tecnologias {
-    background: #deefff;
-    background: -moz-linear-gradient(top, #deefff 0%, #98bede 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #deefff), color-stop(100%, #98bede));
-    background: -webkit-linear-gradient(top, #deefff 0%, #98bede 100%);
-    background: -o-linear-gradient(top, #deefff 0%, #98bede 100%);
-    background: -ms-linear-gradient(top, #deefff 0%, #98bede 100%);
-    background: linear-gradient(to bottom, #deefff 0%, #98bede 100%);
+    box-shadow: 0px 0px 15px #000;
+    z-index: 2000;
     width: 100%;
+    height: inherit;
     text-align: center;
     /*  -----------2------------   */
+    /********EL 9*************/
     /*  ---------3--------------   */
     /*  ---------4--------------   */
     /*  ---------5--------------   */
@@ -587,19 +592,17 @@ header {
     /*  ---------8--------------   */
     /* ---------9----------------- */ }
     #tecnologias .tecnologias .box1 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
+      margin-top: 10%;
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box1 .cuadrado1 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -656,13 +659,13 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box2 .cuadrado2 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -713,6 +716,70 @@ header {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
+    #tecnologias .tecnologias .boxExtra {
+      margin-top: 0.3em;
+      margin-left: 0.7em;
+      margin-right: 0.7em;
+      position: relative;
+      display: inline-block;
+      width: 24%;
+      height: 150px;
+      -webkit-perspective: 1000px; }
+      #tecnologias .tecnologias .boxExtra .cuadradoExtra {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 150px;
+        background-color: black;
+        background-size: 100%, cover;
+        -webkit-transform-style: preserve-3d;
+        transition: all 0.5s; }
+        #tecnologias .tecnologias .boxExtra .cuadradoExtra .textoResponsive {
+          position: absolute;
+          text-transform: uppercase;
+          background-color: black;
+          color: white;
+          text-shadow: 0px 0px 1px #000;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          font-size: 37px;
+          text-align: center;
+          -webkit-transform: rotateX(-89.99deg);
+          -webkit-transform-origin: top;
+          z-index: 1; }
+      #tecnologias .tecnologias .boxExtra:hover .cuadradoExtra {
+        -webkit-transform: rotateX(80deg);
+        -webkit-transform-origin: bottom; }
+      #tecnologias .tecnologias .boxExtra .cuadradoExtra:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 36px;
+        background: inherit;
+        background-size: cover, cover;
+        background-position: bottom;
+        -webkit-transform: rotateX(90deg);
+        -webkit-transform-origin: bottom; }
+      #tecnologias .tecnologias .boxExtra .cuadradoExtra:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        transition: all 0.5s;
+        opacity: 0.15;
+        -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+        -webkit-transform-origin: bottom; }
+      #tecnologias .tecnologias .boxExtra:hover .cuadradoExtra:before {
+        opacity: 1;
+        box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+        -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
     #tecnologias .tecnologias .box3 {
       margin-top: 0.3em;
       margin-left: 0.7em;
@@ -720,13 +787,13 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box3 .cuadrado3 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -784,14 +851,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box4 .cuadrado4 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -849,14 +916,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box5 .cuadrado5 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -914,14 +981,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box6 .cuadrado6 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -979,14 +1046,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box7 .cuadrado7 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -1044,14 +1111,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       margin-top: 100px;
       -webkit-perspective: 1000px; }
       #tecnologias .tecnologias .box8 .cuadrado8 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 200px;
+        height: 150px;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
@@ -1109,14 +1176,14 @@ header {
       position: relative;
       display: inline-block;
       width: 24%;
-      height: 200px;
+      height: 150px;
       background-color: blue;
       overflow: hidden; }
     #tecnologias .tecnologias .cuadrado9 {
       position: relative;
       display: inline-block;
       width: 100%;
-      height: 200px;
+      height: 150px;
       background-color: black;
       overflow: hidden; }
       #tecnologias .tecnologias .cuadrado9 .texto {
@@ -1168,8 +1235,7 @@ header {
     background: url(../img/java.png) center no-repeat;
     background-size: 100%; }
   #tecnologias .responsive {
-    background: url(../img/responsive.png) center no-repeat;
-    background-size: 100%; }
+    background: url(../img/responsive.png) center no-repeat; }
   #tecnologias .texto {
     font-family: 'Londrina Outline', cursive; }
 
@@ -1222,13 +1288,16 @@ header {
 
   #contacto {
     position: absolute;
-    margin: 0; }
+    margin: 0;
+    z-index: 1000;
+    box-shadow: 0px 0px 15px #000; }
 
   footer {
     position: fixed;
     bottom: 0;
     height: 180px;
-    font-size: 12px; }
+    font-size: 12px;
+    z-index: 55; }
 
   #inicio #cajaNegra #mensaje img {
     margin-top: 20px;
