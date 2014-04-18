@@ -44,37 +44,10 @@ a {
 #contacto {
   z-index: 90;
   position: relative;
-  background-image: url(../img/fondo4.jpg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  /* min-height: 899px;*/
-  background-color: #3686b1;
-  /*Probando color degradiente*/
-  background: #c5deea;
-  background: -moz-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(197, 222, 234, 0.6)), color-stop(31%, rgba(138, 187, 215, 0.6)), color-stop(100%, rgba(6, 109, 171, 0.6)));
-  background: -webkit-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
-  background: -o-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
-  background: -ms-linear-gradient(left, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
-  background: linear-gradient(to right, rgba(197, 222, 234, 0.6) 0%, rgba(138, 187, 215, 0.6) 31%, rgba(6, 109, 171, 0.6) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(197, 222, 234, 0.6)', endColorstr='rgba(6, 109, 171, 0.6)',GradientType=1 );
-  /*
-    background: #d0e4f7;
-    background: -moz-linear-gradient(45deg,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#d0e4f7), color-stop(24%,#73b1e7), color-stop(50%,#0a77d5), color-stop(79%,#539fe1), color-stop(100%,#87bcea));
-    background: -webkit-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-    background: -o-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-    background: -ms-linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-    background: linear-gradient(45deg,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=1 );
-    */
-  /* Suspendemos imagen por el momento */
-  /*background-image: url(../img/fondo4.jpg);*/
-  background-size: 100%;
-  padding-top: 5%;
   background: url(../img/backgrounds/pruebas/contacto01.jpg) no-repeat;
+  background-size: 100% 100%;
   text-align: center;
-  padding-top: 2em; }
+  top: 2em; }
   #contacto .triangulo {
     width: 0;
     height: 0;
@@ -1384,7 +1357,8 @@ header {
 /*PRUEBAS DE RESPONSIVE PARA NOTEBOOK*/
 @media (min-width: 1300px) {
   #contacto {
-    background: url(../img/backgrounds/pruebas/contacto01_notebook.jpg) no-repeat; }
+    background: url(../img/backgrounds/pruebas/contacto01_notebook.jpg) no-repeat;
+    background-size: 100% 100%; }
     #contacto #formulario {
       top: 2em; }
 
