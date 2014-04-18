@@ -21,11 +21,11 @@ $("#contacto").hover(function(){
 
 function init()
 {
-alert($('body').height());
+//alert($('body').height());
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
+    $('#inicio').localScroll();
     $('#quienesSomos').localScroll();
-
   responsiveWali();
    
   
@@ -153,15 +153,22 @@ function slide(){
 
 
 function responsiveWali(){
+//RESPONSIVE GENERAL
+ /*    var minimo = $(document).height();
 
+    $('#quienesSomos,#portfolio,#tecnologias,#contacto').css({
+      'min-height': minimo
+    });*/
+  
 
+        
 //::::::::RESPONSIVE DE: "EXPERIENCIA,COMPROMISO,DEDICACION" EN QUIENES SOMOS::::::::::::::::::
- var altura = $('.parrafo').height();
+  altura = $('.parrafo').height();
  $('.parrafo').css('line-height',altura+'px'); 
 
 //:::::::: RESPONSIVE TEXTOS DE QUIENES SOMOS::::::::::
  $("#tituloPre").fitText();
- $(".TextoPre").fitText(2.5,{minFontSize: '14.5px',maxFontSize: '20.2px'});  
+ $(".TextoPre").fitText(2.5,{minFontSize: '14.5px',maxFontSize: '18.5px'});  
 
  
 //:::::::: RESPONSIVE SLIDER DE QUIENES SOMOS:::::::::::::::
