@@ -243,6 +243,23 @@ header {
   text-align: center;
   min-width: 900px;
   border-radius: 0em 0em 2em 2em; }
+  header #translation {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    transition: all 0.1s ease; }
+    header #translation:hover {
+      color: black;
+      font-size: 16px;
+      -webkit-transition: all .1s ease;
+      -moz-transition: all .1s ease;
+      transition: all .1s ease; }
   header nav ul li {
     color: #F7F7F7;
     padding: 0 10px;
