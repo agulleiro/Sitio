@@ -538,7 +538,7 @@ header {
   /*background-color: rgb(161,70,103);*/
  /* background-image: url('../img/volteada.jpg');
   background-size: 100% 100%;*/
-   background:url(../img/volteada3.jpg) no-repeat center;
+   background:url(../img/volteada4.jpg) no-repeat center;
   border-top: 3px solid white; 
  /* background-image: url('../img/fondoNaranja.jpg');
   background-size: 100% 100%;*/
@@ -559,8 +559,9 @@ header {
         border-top: 40px solid transparent;
         border-bottom: 30px solid transparent;
   
-        border-left: 70px solid rgba(253,57 , 8, 1);
-}
+       /* border-left: 70px solid rgba(36,187 , 242, 1);*/
+        border-left: 70px solid rgba(0,0 , 0, 0.2);
+} 
 
     h2{
        
@@ -853,7 +854,7 @@ font-family: 'Londrina Outline', cursive;
   min-height: 899px;
   background:url(../img/backgrounds/img09_2.jpg) no-repeat center;
 .tecnologias{
-  box-shadow: 0px 0px 15px #000; 
+  /*box-shadow: 0px 0px 15px #000; */
   z-index: 2000;
   width: 100%;
   height: inherit;
