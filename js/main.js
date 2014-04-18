@@ -3,16 +3,19 @@ var intv;
 
 $(document).on('ready', init);
 $("#contacto").hover(function(){
+  $(".palabraContacto").css("-webkit-transition","all 1.8s ease");
   $(".palabraContacto").css("transition","all 1.8s ease");
   $(".palabraContacto").css("left","-5em");
 
+    $(".movimientoSobre").css("-webkit-transition","all 1.5s ease");
     $(".movimientoSobre").css("transition","all 1.5s ease");
     $(".movimientoSobre").css("margin-right","0.95em");
     $(".movimientoSobre").css("margin-top","-3.8em");
     $(".movimientoSobre").css("-webkit-transform","rotate(0deg)");
 },function(){
   
-    $(".movimientoSobre").css("transition","all 1.2s");	
+    $(".movimientoSobre").css("transition","all 1.2s"); 
+    $(".movimientoSobre").css("-webkit-transition","all 1.2s"); 
     $(".movimientoSobre").css("margin-top","3.8em");
     $(".movimientoSobre").css("margin-right","20em");
     $(".movimientoSobre").css("-webkit-transform","rotate(-45deg)");
