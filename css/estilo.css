@@ -37,7 +37,7 @@ a {
   font-family: 'Englebert', sans-serif;
   font-size: 2.4em;
   text-align: left;
-  padding-top: 7.5%;
+  margin-top: 260px;
   padding-left: 6%;
   text-shadow: 0px 0px 0px #000; }
 
@@ -45,9 +45,7 @@ a {
   z-index: 90;
   position: relative;
   background: url(../img/backgrounds/pruebas/contacto01.jpg) no-repeat;
-  background-size: 100% 100%;
-  text-align: center;
-  top: 2em; }
+  text-align: center; }
   #contacto .triangulo {
     width: 0;
     height: 0;
@@ -62,6 +60,8 @@ a {
       left: 2000px;
       position: relative; }
   #contacto .franjaDeContacto {
+    position: absolute;
+    top: 70px;
     width: 100%;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -86,12 +86,18 @@ a {
       margin-right: 20em;
       -webkit-transform: rotate(-45deg); }
   #contacto #formulario {
-    top: 10em;
     display: inline-block;
     position: relative;
     text-align: center;
     width: 34.4em;
     height: 28.78em; }
+  #contacto .principalComentario {
+    position: relative;
+    width: 34.4em;
+    height: 28.78em;
+    float: left;
+    margin-top: 228px;
+    margin-left: 2%; }
 
 .caja {
   border-radius: 15px;
@@ -132,6 +138,7 @@ footer {
   font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 100%;
+  min-width: 900px;
   z-index: 10;
   position: absolute;
   background: url(../img/backgrounds/footer/footer02.jpg) no-repeat;
@@ -294,33 +301,7 @@ header {
       font-size: 24px;
       text-align: center;
       color: white;
-      cursor: pointer;
-       /*       #frase1{margin-top: 60%;
-                      margin-bottom: 0;
-                      
-                      
-                      opacity: 1;
-                      transition:all 2s linear;}
-              #frase2{
-                      
-                      margin: 0;
-                      opacity: 1;
-                      transition:all 2s linear;} 
-              #frase3{
-                      
-                      
-                      opacity: 1;
-                      transition:all 2s linear;} 
-
-
-                  img{margin-bottom: 80px;
-                      margin-top: 80px;
-                      width: 70%;
-                      min-width: 100px;
-                      top:30%;
-                      height: auto;
-                    
-                    } */ }
+      cursor: pointer; }
       #inicio #cajaNegra #mensaje #frase1 {
         position: absolute;
         left: 0;
@@ -508,42 +489,7 @@ header {
   z-index: 1;
   background-color: #20B2AA;
   width: 100%;
-  /*min-height: 899px;*/
-                   /*#boxContinuar{
-        position: absolute;
-        display: inline-block;
-        width: 100%;
-        background-color: $azulAcero;
-        top: 0;
-        height: 10%;
-        border-bottom: 3px solid white;
-        text-align: center;
-
-                      
-          .continuar{       
-                   
-
-                    position: relative;
-                   /* left:45%;
-                    top: 20%;
-                    left: 45%;--
-                    top: 28%;
-                  
-                    background-color: rgba(255,255,255,0.2);
-                    padding: 10px 20px;                
-                    border: 3px solid white;
-                    border-radius: 20px;
-                    font-weight: bold;
-                    color: white;
-                    transition: background-color 1s ease;
-                    transition: top 1s ease;   
-                    &:hover{
-                      transition: background-color 1s ease;
-                      background-color: rgba(255,255,255,0);
-                    }
-                       }
-
-          }*/ }
+  /*min-height: 899px;*/ }
   #quienesSomos .slider_container {
     position: relative;
     overflow: hidden;
@@ -1354,83 +1300,3 @@ header {
 
   #reparacion {
     display: block; } }
-/*PRUEBAS DE RESPONSIVE PARA NOTEBOOK*/
-@media (min-width: 1300px) {
-  #contacto {
-    background: url(../img/backgrounds/pruebas/contacto01_notebook.jpg) no-repeat;
-    background-size: 100% 100%; }
-    #contacto #formulario {
-      top: 2em; }
-
-  #tecnologias .tecnologias .box1 {
-    margin-top: 7%;
-    height: 7em; }
-    #tecnologias .tecnologias .box1 .cuadrado1 {
-      height: 7em; }
-  #tecnologias .tecnologias .box2 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box2 .cuadrado2 {
-      height: 7em; }
-  #tecnologias .tecnologias .box3 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box3 .cuadrado3 {
-      height: 7em; }
-  #tecnologias .tecnologias .box4 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box4 .cuadrado4 {
-      height: 7em; }
-  #tecnologias .tecnologias .box5 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box5 .cuadrado5 {
-      height: 7em; }
-  #tecnologias .tecnologias .box6 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box6 .cuadrado6 {
-      height: 7em; }
-  #tecnologias .tecnologias .box7 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box7 .cuadrado7 {
-      height: 7em; }
-  #tecnologias .tecnologias .box8 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box8 .cuadrado8 {
-      height: 7em; }
-  #tecnologias .tecnologias .boxExtra {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .boxExtra .cuadradoExtra {
-      height: 7em; }
-  #tecnologias .html5 {
-    background: url(../img/html5.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .css3 {
-    background: url(../img/css3.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .php {
-    background: url(../img/php.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .js {
-    background: url(../img/javascript.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .jquery {
-    background: url(../img/jquery.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .mysql {
-    background: url(../img/Mysql.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .net {
-    background: url(../img/visualstudio.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .java {
-    background: url(../img/java.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .responsive {
-    background: url(../img/responsive.png) center no-repeat;
-    background-size: 100%; } }
