@@ -27,9 +27,9 @@ function init()
 //alert($('body').height());
 	$('#navegacionPrincipal').localScroll();//carga el localScroll, efecto copado para la navegacion
 	$('.navegacionFooter').localScroll();
-    $('#inicio').localScroll();
-    $('#quienesSomos').localScroll();
-  responsiveWali();
+  $('#inicio').localScroll();
+  $('#quienesSomos').localScroll();
+  responsiveDesign();
    
   
     Aparecerobjetos();  // probando funcion para aprender
@@ -155,7 +155,7 @@ function slide(){
 }
 
 
-function responsiveWali(){
+function responsiveDesign(){
 //RESPONSIVE GENERAL
  /*    var minimo = $(document).height();
 
@@ -172,6 +172,8 @@ function responsiveWali(){
 //:::::::: RESPONSIVE TEXTOS DE QUIENES SOMOS::::::::::
  $("#tituloPre").fitText();
  $(".TextoPre").fitText(2.5,{minFontSize: '14.5px',maxFontSize: '18.5px'});  
+ $(".comentarioContacto").fitText();
+ $(".texto").fitText(0.5);
 
  
 //:::::::: RESPONSIVE SLIDER DE QUIENES SOMOS:::::::::::::::
