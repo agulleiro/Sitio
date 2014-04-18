@@ -118,6 +118,7 @@ a{  color: inherit;
       font-size: 26px;
       color: #FBFBF5;
       overflow: hidden;
+      -webkit-transition:all 1.8s;
       transition:all 1.8s;
         &:hover{
           };
@@ -227,6 +228,7 @@ footer{
   cursor: pointer;
   line-height: 2px;
   transition:all 0.6s;
+  -webkit-transition:all 0.6s;
     &:hover{
       color:#08298A;
     }
@@ -281,6 +283,7 @@ footer{
   font-size: 5em;
   cursor: pointer;
   transition:all 0.6s;
+  -webkit-transition:all 0.6s;
     &:hover{
       color:#FE2E2E;
     }
@@ -328,6 +331,7 @@ header {
   font-size: 5em;
   cursor: pointer;
   transition:all 0.6s;
+  -webkit-transition:all 0.6s;
     &:hover{
       color:#0489B1;
     }
@@ -520,6 +524,7 @@ header {
     ul{
       li{
         transition:all 0.4s;
+       -webkit-transition:all 0.4s;
         &:hover{
           text-shadow:0px 0px 1.3px #F5F6CE;
           -webkit-transform:rotate(-9deg);
@@ -879,6 +884,7 @@ font-family: 'Londrina Outline', cursive;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         transition: all 0.5s;
+        -webkit-transition: all 0.5s;
           .texto{
             position: absolute;
             text-transform: uppercase;
@@ -918,6 +924,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+      -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -949,6 +956,7 @@ font-family: 'Londrina Outline', cursive;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .texto{
             position: absolute;
@@ -990,6 +998,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1019,6 +1028,7 @@ font-family: 'Londrina Outline', cursive;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .textoResponsive{
             position: absolute;
@@ -1060,6 +1070,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1090,6 +1101,7 @@ font-family: 'Londrina Outline', cursive;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .texto{
             position: absolute;
@@ -1131,6 +1143,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1163,6 +1176,7 @@ font-family: 'Londrina Outline', cursive;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .texto{
             position: absolute;
@@ -1204,6 +1218,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1236,6 +1251,7 @@ font-family: 'Londrina Outline', cursive;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .texto{
             position: absolute;
@@ -1277,6 +1293,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1311,6 +1328,7 @@ font-family: 'Londrina Outline', cursive;
         //background: url(img/html5.png) center no-repeat ;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .texto{
             position: absolute;
@@ -1352,6 +1370,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1384,6 +1403,7 @@ font-family: 'Londrina Outline', cursive;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .texto{
             position: absolute;
@@ -1425,6 +1445,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1457,6 +1478,7 @@ font-family: 'Londrina Outline', cursive;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s; 
         transition: all 0.5s;
           .texto{
             position: absolute;
@@ -1498,6 +1520,7 @@ font-family: 'Londrina Outline', cursive;
       height: 100%;
       background: rgba(0, 0, 0, 0.5); 
       box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s; 
       transition: all 0.5s; 
       opacity: 0.15;
       -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1627,6 +1650,7 @@ font-family: 'Londrina Outline', cursive;
   font-size: 5em;
   cursor: pointer;
   transition:all 0.6s;
+  -webkit-transition:all 0.6s;
     &:hover{
       color:#2ECCFA;
     }
@@ -1670,4 +1694,138 @@ and (max-device-width : 480px) {
  #reparacion {
   display: block;
  }
+}
+
+/*PRUEBAS DE RESPONSIVE PARA NOTEBOOK*/
+
+@media (min-width: 1300px) {
+
+#contacto{
+  background:url(../img/backgrounds/pruebas/contacto01_notebook.jpg) no-repeat;
+  #formulario{
+      top:2em;
+    }
+  }
+#tecnologias{
+  .tecnologias{
+ 
+    .box1{
+      margin-top: 7%;
+      height: 7em;
+      .cuadrado1{
+        height: 7em;
+      }
+    }
+  
+ 
+    .box2{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadrado2{
+        height: 7em;
+      }
+    }
+ 
+    .box3{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadrado3{
+        height: 7em;
+      }
+    }
+ 
+    .box4{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadrado4{
+        height: 7em;
+      }
+    }
+ 
+    .box5{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadrado5{
+        height: 7em;
+      }
+    }
+ 
+    .box6{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadrado6{
+        height: 7em;
+      }
+    }
+ 
+    .box7{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadrado7{
+        height: 7em;
+      }
+    }
+ 
+    .box8{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadrado8{
+        height: 7em;
+      }
+    }
+ 
+    .boxExtra{
+      margin-top: 4.5em;
+      height: 7em;
+      .cuadradoExtra{
+        height: 7em;
+      }
+    }
+  
+}
+
+.html5{
+  background: url(../img/html5.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.css3{
+  background: url(../img/css3.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.php{
+  background: url(../img/php.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.js{
+  background: url(../img/javascript.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.jquery{
+  background: url(../img/jquery.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.mysql{
+  background: url(../img/Mysql.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.net{
+  background: url(../img/visualstudio.png) center no-repeat ;
+  background-size: 100%;
+}
+
+.java{
+  background: url(../img/java.png) center no-repeat ;
+  background-size: 100%;
+}
+.responsive{
+  background: url(../img/responsive.png) center no-repeat;
+  background-size: 100%;
+}
+}
 }

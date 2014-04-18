@@ -98,6 +98,7 @@ a {
     font-size: 26px;
     color: #FBFBF5;
     overflow: hidden;
+    -webkit-transition: all 1.8s;
     transition: all 1.8s; }
     #contacto .franjaDeContacto .movimientoSobre {
       width: 5em;
@@ -183,7 +184,8 @@ footer {
   font-size: 5em;
   cursor: pointer;
   line-height: 2px;
-  transition: all 0.6s; }
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s; }
   .FB:hover {
     color: #08298A; }
 
@@ -228,7 +230,8 @@ footer {
   font-family: 'Socialico';
   font-size: 5em;
   cursor: pointer;
-  transition: all 0.6s; }
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s; }
   .Gplus:hover {
     color: #FE2E2E; }
 
@@ -261,7 +264,8 @@ header {
   font-family: 'Socialico';
   font-size: 5em;
   cursor: pointer;
-  transition: all 0.6s; }
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s; }
   .IN:hover {
     color: #0489B1; }
 
@@ -411,7 +415,8 @@ header {
   margin-top: -6px;
   margin-left: -3em; }
   .navegacionFooter nav ul li {
-    transition: all 0.4s; }
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s; }
     .navegacionFooter nav ul li:hover {
       text-shadow: 0px 0px 1.3px #F5F6CE;
       -webkit-transform: rotate(-9deg);
@@ -667,7 +672,8 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
-        transition: all 0.5s; }
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s; }
         #tecnologias .tecnologias .box1 .cuadrado1 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -705,6 +711,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -730,6 +737,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .box2 .cuadrado2 .texto {
           position: absolute;
@@ -769,6 +777,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -794,6 +803,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .boxExtra .cuadradoExtra .textoResponsive {
           position: absolute;
@@ -833,6 +843,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -858,6 +869,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .box3 .cuadrado3 .texto {
           position: absolute;
@@ -897,6 +909,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -923,6 +936,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .box4 .cuadrado4 .texto {
           position: absolute;
@@ -962,6 +976,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -988,6 +1003,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .box5 .cuadrado5 .texto {
           position: absolute;
@@ -1027,6 +1043,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1053,6 +1070,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .box6 .cuadrado6 .texto {
           position: absolute;
@@ -1092,6 +1110,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1118,6 +1137,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .box7 .cuadrado7 .texto {
           position: absolute;
@@ -1157,6 +1177,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1183,6 +1204,7 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
+        -webkit-transition: all 0.5s;
         transition: all 0.5s; }
         #tecnologias .tecnologias .box8 .cuadrado8 .texto {
           position: absolute;
@@ -1222,6 +1244,7 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.5s;
         transition: all 0.5s;
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
@@ -1313,7 +1336,8 @@ header {
   font-family: 'Socialico';
   font-size: 5em;
   cursor: pointer;
-  transition: all 0.6s; }
+  transition: all 0.6s;
+  -webkit-transition: all 0.6s; }
   .TW:hover {
     color: #2ECCFA; }
 
@@ -1340,3 +1364,82 @@ header {
 
   #reparacion {
     display: block; } }
+/*PRUEBAS DE RESPONSIVE PARA NOTEBOOK*/
+@media (min-width: 1300px) {
+  #contacto {
+    background: url(../img/backgrounds/pruebas/contacto01_notebook.jpg) no-repeat; }
+    #contacto #formulario {
+      top: 2em; }
+
+  #tecnologias .tecnologias .box1 {
+    margin-top: 7%;
+    height: 7em; }
+    #tecnologias .tecnologias .box1 .cuadrado1 {
+      height: 7em; }
+  #tecnologias .tecnologias .box2 {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .box2 .cuadrado2 {
+      height: 7em; }
+  #tecnologias .tecnologias .box3 {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .box3 .cuadrado3 {
+      height: 7em; }
+  #tecnologias .tecnologias .box4 {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .box4 .cuadrado4 {
+      height: 7em; }
+  #tecnologias .tecnologias .box5 {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .box5 .cuadrado5 {
+      height: 7em; }
+  #tecnologias .tecnologias .box6 {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .box6 .cuadrado6 {
+      height: 7em; }
+  #tecnologias .tecnologias .box7 {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .box7 .cuadrado7 {
+      height: 7em; }
+  #tecnologias .tecnologias .box8 {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .box8 .cuadrado8 {
+      height: 7em; }
+  #tecnologias .tecnologias .boxExtra {
+    margin-top: 4.5em;
+    height: 7em; }
+    #tecnologias .tecnologias .boxExtra .cuadradoExtra {
+      height: 7em; }
+  #tecnologias .html5 {
+    background: url(../img/html5.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .css3 {
+    background: url(../img/css3.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .php {
+    background: url(../img/php.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .js {
+    background: url(../img/javascript.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .jquery {
+    background: url(../img/jquery.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .mysql {
+    background: url(../img/Mysql.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .net {
+    background: url(../img/visualstudio.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .java {
+    background: url(../img/java.png) center no-repeat;
+    background-size: 100%; }
+  #tecnologias .responsive {
+    background: url(../img/responsive.png) center no-repeat;
+    background-size: 100%; } }
