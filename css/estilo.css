@@ -271,10 +271,21 @@ header {
   overflow: hidden;
   z-index: 0;
   background-image: url(../img/fondoBsAs.jpg);
+  background-color: black;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 600px;
-  min-width: 900px; }
+  min-width: 900px;
+  opacity: 0;
+  -webkit-transition: all 5s;
+  /* Safari and Chrome */
+  -moz-transition: all 5s;
+  /* Firefox */
+  -ms-transition: all 5s;
+  /* Internet Explorer */
+  -o-transition: all 5s;
+  /* Opera */
+  transition: all 5s; }
 
 #inicio {
   position: relative;
@@ -399,9 +410,9 @@ header {
   z-index: 1;
   /*min-height: 899px;*/
   /*background-color: rgb(161,70,103);*/
-  /* background-image: url('../img/volteada.jpg');
+  /* background-image: url('../img/img/portfolio.jpg');
    background-size: 100% 100%;*/
-  background: url(../img/volteada4.jpg) no-repeat center;
+  background: url(../img/portfolio.jpg) no-repeat center;
   border-top: 3px solid white;
   /* background-image: url('../img/fondoNaranja.jpg');
    background-size: 100% 100%;*/
