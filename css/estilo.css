@@ -45,11 +45,12 @@ a {
   z-index: 90;
   position: relative;
   background: url(../img/backgrounds/pruebas/contacto01.jpg) no-repeat;
+  background-size: auto 100%;
   text-align: center; }
   #contacto .triangulo {
     width: 0;
     height: 0;
-    opacity: 0.7;
+    opacity: .7;
     border-top: 2.31em solid transparent;
     border-left: 5em solid #262626;
     border-bottom: 2.31em solid transparent; }
@@ -164,8 +165,8 @@ footer {
   font-size: 5em;
   cursor: pointer;
   line-height: 2px;
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s; }
+  transition: all .6s;
+  -webkit-transition: all .6s; }
   .FB:hover {
     color: #08298A; }
 
@@ -174,7 +175,7 @@ footer {
   height: 11.2em;
   margin-top: 2em;
   margin-bottom: 2em;
-  border-radius: 0.8em;
+  border-radius: .8em;
   border: 2px solid rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
@@ -182,8 +183,8 @@ footer {
 
 .formInput {
   margin-top: 2em;
-  margin-right: 0.7em;
-  border-radius: 0.8em;
+  margin-right: .7em;
+  border-radius: .8em;
   height: 2em;
   width: 15em;
   outline: 0;
@@ -210,8 +211,8 @@ footer {
   font-family: 'Socialico';
   font-size: 5em;
   cursor: pointer;
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s; }
+  transition: all .6s;
+  -webkit-transition: all .6s; }
   .Gplus:hover {
     color: #FE2E2E; }
 
@@ -231,9 +232,9 @@ header {
     left: 10px;
     top: 5px;
     cursor: pointer;
-    -webkit-transition: all 0.1s ease;
-    -moz-transition: all 0.1s ease;
-    transition: all 0.1s ease; }
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease; }
     header #translation:hover {
       color: black;
       font-size: 16px;
@@ -247,22 +248,22 @@ header {
     display: inline-block;
     cursor: pointer;
     border-radius: 10px;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    transition: all 0.2s linear; }
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    transition: all .2s linear; }
     header nav ul li:hover {
       color: #000;
       font-size: 2em;
-      -webkit-transition: all 0.2s linear;
-      transition: all 0.2s linear;
-      -moz-transition: all 0.2s linear; }
+      -webkit-transition: all .2s linear;
+      transition: all .2s linear;
+      -moz-transition: all .2s linear; }
 
 .IN {
   font-family: 'Socialico';
   font-size: 5em;
   cursor: pointer;
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s; }
+  transition: all .6s;
+  -webkit-transition: all .6s; }
   .IN:hover {
     color: #0489B1; }
 
@@ -397,8 +398,8 @@ header {
   margin-top: -6px;
   margin-left: -3em; }
   .navegacionFooter nav ul li {
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s; }
+    transition: all .4s;
+    -webkit-transition: all .4s; }
     .navegacionFooter nav ul li:hover {
       text-shadow: 0px 0px 1.3px #F5F6CE;
       -webkit-transform: rotate(-9deg);
@@ -413,6 +414,8 @@ header {
   /* background-image: url('../img/img/portfolio.jpg');
    background-size: 100% 100%;*/
   background: url(../img/portfolio.jpg) no-repeat center;
+  /*_________________________________________________________ NO SE SI CORRESPONDE A PROBARLA*/
+  background-size: 100% 100%;
   border-top: 3px solid white;
   /* background-image: url('../img/fondoNaranja.jpg');
    background-size: 100% 100%;*/
@@ -452,9 +455,9 @@ header {
     width: 764px;
     height: 320px;
     overflow: hidden;
-   /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);*/ }
+   /* box-shadow: 0 0 10px 1px rgba(0, 0, 0, .35);
+   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, .35);
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, .35);*/ }
   #portfolio .acordeon ul li {
     position: relative;
     display: block;
@@ -466,9 +469,9 @@ header {
     -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
     /*Transiciones */
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s; }
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s; }
     #portfolio .acordeon ul li a {
       width: 20px; }
       #portfolio .acordeon ul li a img {
@@ -586,7 +589,8 @@ header {
   z-index: 1000;
   height: 100%;
   min-height: 899px;
-  background: url(../img/backgrounds/img09_2.jpg) no-repeat center; }
+  background: url(../img/backgrounds/img09_2.jpg) no-repeat center;
+  background-size: 100% 100%; }
   #tecnologias .tecnologias {
     /*box-shadow: 0px 0px 15px #000; */
     z-index: 2000;
@@ -620,8 +624,8 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s; }
+        transition: all .5s;
+        -webkit-transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado1 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -659,9 +663,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado1:before {
@@ -676,8 +680,8 @@ header {
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado2 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -716,9 +720,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado2:before {
@@ -732,8 +736,8 @@ header {
         height: inherit;
         background-color: black;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadradoExtra .textoResponsive {
           position: absolute;
           text-transform: uppercase;
@@ -772,9 +776,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadradoExtra:before {
@@ -788,8 +792,8 @@ header {
         height: inherit;
         background-color: black;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado3 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -828,9 +832,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado3:before {
@@ -844,8 +848,8 @@ header {
         height: inherit;
         background-color: black;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado4 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -884,9 +888,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado4:before {
@@ -900,8 +904,8 @@ header {
         height: inherit;
         background-color: black;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado5 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -940,9 +944,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado5:before {
@@ -956,8 +960,8 @@ header {
         height: inherit;
         background-color: black;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado6 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -996,9 +1000,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado6:before {
@@ -1012,8 +1016,8 @@ header {
         height: inherit;
         background-color: black;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado7 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -1052,9 +1056,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado7:before {
@@ -1068,8 +1072,8 @@ header {
         height: inherit;
         background-color: black;
         -webkit-transform-style: preserve-3d;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        -webkit-transition: all .5s;
+        transition: all .5s; }
         #tecnologias .tecnologias .box3D .cuadrado8 .texto {
           position: absolute;
           text-transform: uppercase;
@@ -1108,9 +1112,9 @@ header {
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-        opacity: 0.15;
+        -webkit-transition: all .5s;
+        transition: all .5s;
+        opacity: .15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
       #tecnologias .tecnologias .box3D:hover .cuadrado8:before {
@@ -1119,6 +1123,7 @@ header {
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
 
 /*  :_ ;  */
+/* ---------9----------------- */
 .html5 {
   background: url(../img/html5.png) center no-repeat; }
 
@@ -1162,8 +1167,8 @@ header {
   font-family: 'Socialico';
   font-size: 5em;
   cursor: pointer;
-  transition: all 0.6s;
-  -webkit-transition: all 0.6s; }
+  transition: all .6s;
+  -webkit-transition: all .6s; }
   .TW:hover {
     color: #2ECCFA; }
 
@@ -1199,8 +1204,6 @@ header {
         border-radius: 0px;
         padding: 0 0px;
         margin-top: 3px; }
-        header nav ul li:hover {
-          display: block; }
 
   /*#reparacion {
    display: block;
