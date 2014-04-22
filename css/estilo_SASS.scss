@@ -1478,7 +1478,7 @@ font-family: 'Londrina Outline', cursive;
 
 @media screen and (max-width: 300px) {
 
- #inicio, #quienesSomos,#portfolio,#tecnologias,#contacto,#fondo,footer,/*header*/{
+ /*#inicio,*/ #quienesSomos,#portfolio,#tecnologias,#contacto,#fondo,footer,/*header*/{
   display: none;
  }
 
@@ -1486,6 +1486,15 @@ font-family: 'Londrina Outline', cursive;
   min-width: 0px;
   width: 300px;
   margin: 0 auto;
+ }
+
+ .fullScreen{
+  max-width: 300px;
+
+
+ }
+ .fullScreen2{
+  max-width: 300px;
  }
 
  header{
@@ -1524,16 +1533,96 @@ font-family: 'Londrina Outline', cursive;
 
  }
 
- /*#reparacion {
-  display: block;
- }*/
+#inicio{
+ 
+  position: relative;
+  z-index: 1;
+ min-height: 0px;
+
+    #cajaNegra{ position: absolute;
+                width: 100%;
+                min-width: 100px;
+                margin: 0 auto;
+                left:0;
+                right: 0;
+                background-color: rgba(0,0,0,.59);
+                height: 100%;
+                -webkit-transition: all 2s linear;
+                -moz-transition: all 2s linear;
+                transition:all 2s linear;
+                
+                    #mensaje{ 
+                     position:relative;
+                     display: block;
+                     height: 100%;
+                     font-family: 'Quantico', sans-serif;
+                     line-height:1.2em;
+                     font-size: 16px;
+                     text-align: center;
+                     color: white;
+                     cursor: pointer;
+
+                     
+
+               
+                  #frase1{  position: absolute; 
+                            left: 0;
+                            right: 0;
+                            text-align: center;
+                            top:25%;
+                            opacity: 0;
+                            width: 200px;
+                            margin: 0 auto;
+                            transition:all 2s linear;
+                             -webkit-transition: all 2s linear;
+                             -moz-transition:all 2s linear;
+                            }    
+
+
+
+                  #frase2{position: absolute;
+                          left: 0;
+                          right: 0;
+                          text-align: center;
+                          bottom: 10%;
+                          height: 25%;
+                          opacity: 0;
+                          transition:all 2s linear;
+                          -webkit-transition: all 2s linear;
+                           -moz-transition:all 2s linear;
+                           
+                          
+
+                  }    
+
+
+                  #frase3{  
+                            position: absolute;
+                            margin: 0 auto;
+                            left: 0;
+                            right: 0;
+                            height: 20%;
+                            min-height: 100px;
+                            width: auto;
+                            top: 43%;
+                            opacity: 0;
+                            transition:all 2s linear;
+                              -webkit-transition: all 2s linear;
+                              -moz-transition:all 2s linear; }
+                    
+    }
+              }
+
+}
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
- #inicio, #quienesSomos,#portfolio,#tecnologias,#contacto,#fondo,footer,/*header*/{
+ /*#inicio,*/ #quienesSomos,#portfolio,#tecnologias,#contacto,#fondo,footer,/*header*/{
   display: none;
+
  }
+
 
  html,body{
   min-width: 320px;
