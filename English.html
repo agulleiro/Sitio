@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <title>Inicio</title>
+        <title>SkySoft</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -29,8 +29,8 @@
 
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-        <script src="js/jquery.fittext.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        
     </head>
     <body>
         
@@ -66,7 +66,7 @@
         <section  class="fullScreen" id="inicio">
             <div id="cajaNegra">
                 <div id="mensaje">
-                    <span id="frase1"> <h2 >We<br> Develop</h2></span>
+                    <div id="frase1"> <h2 >We<br> Develop</h2></div>
                      <img id="frase3" src="img/skysoft3.png" alt="SkySoft"> 
                     <div id="frase2"><h2 id="fit">You <br>Choose<br> us</h2></div>
                 </div> 
@@ -90,9 +90,9 @@
             </div>
              <div class="slider_container ">
                         <div class="slideContainer">
-                           <div class="slide" style="background-color:#9370DB" ><p class="parrafo">Experience</p></div>
-                           <div class="slide" style="background-color:#FF6347"><p class="parrafo">Responsability</p></div>
-                           <div class="slide" style="background-color:#70DB93" ><p class="parrafo">Dedication</p></div>
+                           <div class="slide" style="background-color:#9370DB" ><p class="parrafo">Experience</div>
+                           <div class="slide" style="background-color:#FF6347"><p class="parrafo">Trust</div>
+                           <div class="slide" style="background-color:#70DB93" ><p class="parrafo">Dedication</div>
                            
                    </div> 
             </div> 
@@ -121,28 +121,28 @@
                                 <a href="#">Image 1</a>
                             </div>
                             <a href="#">
-                                <img src="img/fondo2.jpg" alt="Imagen1"></a>
+                                <img src="img/noimagen.jpg" alt="Imagen1"></a>
                         </li>
                         <li>
                             <div class="tituloImagen">
                                 <a href="#">Image 2</a>
                             </div>
                             <a href="#">
-                                <img src="img/fondo3.jpg"  alt="Imagen2"></a>
+                                <img src="img/noimagen.jpg"  alt="Imagen2"></a>
                         </li>
                         <li>
                             <div class="tituloImagen">
                                 <a href="#">Image 3</a>
                             </div>
                             <a href="#">
-                                <img src="img/fondo4.jpg"  alt="Imagen3"></a>
+                                <img src="img/noimagen.jpg"  alt="Imagen3"></a>
                         </li>
                         <li>
                             <div class="tituloImagen">
                                 <a href="#">Image 4</a>
                             </div>
                             <a href="#">
-                                <img src="img/port01.jpg"  alt="Imagen4"></a>
+                                <img src="img/noimagen.jpg"  alt="Imagen4"></a>
                         </li>
                     </ul>
 
@@ -155,63 +155,63 @@
         <section  class="fullScreen2"  id="tecnologias">
 
     <div class="tecnologias">
-        <div class="box1">
+        <div class="box3D">
             <div class="cuadrado1 html5">
                 <div class="texto">
                     HTML5
                 </div>  
             </div>
         </div>
-        <div class="box2">
+        <div class="box3D">
             <div class="cuadrado2 css3">
                 <div class="texto">
                     CSS3
                 </div>  
             </div>
         </div>
-        <div class="box3">
-            <div class="cuadrado3 js">
+        <div class="box3D">
+            <div class="cuadrado3 jsOk">
                 <div class="texto">
                     JavaScript
                 </div>  
             </div>  
         </div>
-        <div class="box4">
+        <div class="box3D">
             <div class="cuadrado4 jquery">
                 <div class="texto">
                     jQuery
                 </div>  
             </div>  
         </div>
-        <div class="box5">
+        <div class="box3D">
             <div class="cuadrado5 php">
                 <div class="texto">
                     PHP
                 </div>  
             </div>  
             </div>
-        <div class="box6">
+        <div class="box3D">
             <div class="cuadrado6 mysql">
                 <div class="texto">
                     MySQL
                 </div>  
             </div>  
             </div>
-        <div class="box7">
+        <div class="box3D">
             <div class="cuadrado7 net">
                 <div class="texto">
                     .NET / C#
                 </div>  
             </div>  
         </div>
-        <div class="box8">
+        <div class="box3D">
             <div class="cuadrado8 java">
                 <div class="texto">
                     Java
                 </div>  
             </div>  
         </div> 
-        <div class="boxExtra">
+        <div class="box3D">
             <div class="cuadradoExtra responsive">
                 <div class="textoResponsive">
                     Responsive Design
@@ -221,7 +221,7 @@
     </div>
         </section>
          <!-- :::::::::::::::: CONTACTO ::::::::::::::::::::::::-->
-        <section  id="contacto" class="fullScreen">
+        <section  id="contacto" class="fullScreen2">
             <div class="franjaDeContacto">
                 <div class="triangulo">
                     <span class="palabraContacto">Contact Us</span>
@@ -229,7 +229,7 @@
                 <div class="movimientoSobre"></div>
             </div>
             <div class="comentarioContacto">
-                For more information, please send us a message. Wi will be in contact soon.
+                For more information, please send us a message. We will be in contact soon.
             </div>
             <div class="principalComentario">
                 <form action="enviarMail.php" method="post" id="formulario">
@@ -240,6 +240,7 @@
                         <textarea name="comentario" placeholder="Comment" class="formTA"></textarea>
                         <input type="submit" value="Send" class="enviarComentario">
                 </form>
+            </div>
         </section>
           <!-- :::::::::::::::: FOOTER ::::::::::::::::::::::::-->
         <footer>
@@ -271,13 +272,15 @@
         </section>
 
 
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+      <!--   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-        <script src="js/lettering.js"></script>
-        <script src="js/scrollto.min.js"></script>
-        <script src="js/localscroll.min.js"></script>
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        
+        <script src="js/jquery.fittext.js"></script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

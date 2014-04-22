@@ -37,7 +37,7 @@ a {
   font-family: 'Englebert', sans-serif;
   font-size: 2.4em;
   text-align: left;
-  padding-top: 7.5%;
+  margin-top: 260px;
   padding-left: 6%;
   text-shadow: 0px 0px 0px #000; }
 
@@ -45,9 +45,7 @@ a {
   z-index: 90;
   position: relative;
   background: url(../img/backgrounds/pruebas/contacto01.jpg) no-repeat;
-  background-size: 100% 100%;
-  text-align: center;
-  top: 2em; }
+  text-align: center; }
   #contacto .triangulo {
     width: 0;
     height: 0;
@@ -62,6 +60,8 @@ a {
       left: 2000px;
       position: relative; }
   #contacto .franjaDeContacto {
+    position: absolute;
+    top: 70px;
     width: 100%;
     height: 120px;
     background-color: rgba(255, 255, 255, 0.4);
@@ -86,12 +86,18 @@ a {
       margin-right: 20em;
       -webkit-transform: rotate(-45deg); }
   #contacto #formulario {
-    top: 10em;
     display: inline-block;
     position: relative;
     text-align: center;
     width: 34.4em;
     height: 28.78em; }
+  #contacto .principalComentario {
+    position: relative;
+    width: 34.4em;
+    height: 28.78em;
+    float: left;
+    margin-top: 228px;
+    margin-left: 2%; }
 
 .caja {
   border-radius: 15px;
@@ -132,6 +138,7 @@ footer {
   font-family: 'Alegreya Sans', sans-serif;
   height: 185px;
   width: 100%;
+  min-width: 900px;
   z-index: 10;
   position: absolute;
   background: url(../img/backgrounds/footer/footer02.jpg) no-repeat;
@@ -264,10 +271,21 @@ header {
   overflow: hidden;
   z-index: 0;
   background-image: url(../img/fondoBsAs.jpg);
+  background-color: black;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   min-height: 600px;
-  min-width: 900px; }
+  min-width: 900px;
+  opacity: 0;
+  -webkit-transition: all 5s;
+  /* Safari and Chrome */
+  -moz-transition: all 5s;
+  /* Firefox */
+  -ms-transition: all 5s;
+  /* Internet Explorer */
+  -o-transition: all 5s;
+  /* Opera */
+  transition: all 5s; }
 
 #inicio {
   position: relative;
@@ -294,33 +312,7 @@ header {
       font-size: 24px;
       text-align: center;
       color: white;
-      cursor: pointer;
-       /*       #frase1{margin-top: 60%;
-                      margin-bottom: 0;
-                      
-                      
-                      opacity: 1;
-                      transition:all 2s linear;}
-              #frase2{
-                      
-                      margin: 0;
-                      opacity: 1;
-                      transition:all 2s linear;} 
-              #frase3{
-                      
-                      
-                      opacity: 1;
-                      transition:all 2s linear;} 
-
-
-                  img{margin-bottom: 80px;
-                      margin-top: 80px;
-                      width: 70%;
-                      min-width: 100px;
-                      top:30%;
-                      height: auto;
-                    
-                    } */ }
+      cursor: pointer; }
       #inicio #cajaNegra #mensaje #frase1 {
         position: absolute;
         left: 0;
@@ -418,9 +410,9 @@ header {
   z-index: 1;
   /*min-height: 899px;*/
   /*background-color: rgb(161,70,103);*/
-  /* background-image: url('../img/volteada.jpg');
+  /* background-image: url('../img/img/portfolio.jpg');
    background-size: 100% 100%;*/
-  background: url(../img/volteada4.jpg) no-repeat center;
+  background: url(../img/portfolio.jpg) no-repeat center;
   border-top: 3px solid white;
   /* background-image: url('../img/fondoNaranja.jpg');
    background-size: 100% 100%;*/
@@ -508,42 +500,7 @@ header {
   z-index: 1;
   background-color: #20B2AA;
   width: 100%;
-  /*min-height: 899px;*/
-                   /*#boxContinuar{
-        position: absolute;
-        display: inline-block;
-        width: 100%;
-        background-color: $azulAcero;
-        top: 0;
-        height: 10%;
-        border-bottom: 3px solid white;
-        text-align: center;
-
-                      
-          .continuar{       
-                   
-
-                    position: relative;
-                   /* left:45%;
-                    top: 20%;
-                    left: 45%;--
-                    top: 28%;
-                  
-                    background-color: rgba(255,255,255,0.2);
-                    padding: 10px 20px;                
-                    border: 3px solid white;
-                    border-radius: 20px;
-                    font-weight: bold;
-                    color: white;
-                    transition: background-color 1s ease;
-                    transition: top 1s ease;   
-                    &:hover{
-                      transition: background-color 1s ease;
-                      background-color: rgba(255,255,255,0);
-                    }
-                       }
-
-          }*/ }
+  /*min-height: 899px;*/ }
   #quienesSomos .slider_container {
     position: relative;
     overflow: hidden;
@@ -626,7 +583,7 @@ header {
 #tecnologias {
   position: relative;
   background-color: #cb5211;
-  z-index: 10;
+  z-index: 1000;
   height: 100%;
   min-height: 899px;
   background: url(../img/backgrounds/img09_2.jpg) no-repeat center; }
@@ -636,35 +593,36 @@ header {
     width: 100%;
     height: inherit;
     text-align: center;
-    /*  -----------2------------   */
-    /********EL 9*************/
-    /*  ---------3--------------   */
-    /*  ---------4--------------   */
-    /*  ---------5--------------   */
-    /*  ---------6-------------   */
-    /*  ------------7-----------   */
-    /*  ---------8--------------   */
-    /* ---------9----------------- */ }
-    #tecnologias .tecnologias .box1 {
+    /* estas llaves por las dudas */ }
+    #tecnologias .tecnologias .box3D {
+      max-height: 160px;
+      text-align: center;
       margin-top: 10%;
+      margin-left: 2.5%;
       position: relative;
       display: inline-block;
       width: 24%;
       height: 9.345em;
       -webkit-perspective: 1000px;
       -ms-perspective: 1000px;
-      perspective: 1000px; }
-      #tecnologias .tecnologias .box1 .cuadrado1 {
+      perspective: 1000px;
+      /*  ---------3--------------   */
+      /*  ---------4--------------   */
+      /*  ---------5--------------   */
+      /*  ---------6-------------   */
+      /*  ------------7-----------   */
+      /*  ---------8--------------   */ }
+      #tecnologias .tecnologias .box3D .cuadrado1 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         transition: all 0.5s;
         -webkit-transition: all 0.5s; }
-        #tecnologias .tecnologias .box1 .cuadrado1 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado1 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -677,10 +635,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box1:hover .cuadrado1 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado1 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box1 .cuadrado1:after {
+      #tecnologias .tecnologias .box3D .cuadrado1:after {
         content: '';
         position: absolute;
         left: 0;
@@ -692,7 +650,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box1 .cuadrado1:before {
+      #tecnologias .tecnologias .box3D .cuadrado1:before {
         content: '';
         position: absolute;
         top: 0;
@@ -706,30 +664,21 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box1:hover .cuadrado1:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado1:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box2 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .box2 .cuadrado2 {
+      #tecnologias .tecnologias .box3D .cuadrado2 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
         background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .box2 .cuadrado2 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado2 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -743,10 +692,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box2:hover .cuadrado2 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado2 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box2 .cuadrado2:after {
+      #tecnologias .tecnologias .box3D .cuadrado2:after {
         content: '';
         position: absolute;
         left: 0;
@@ -758,7 +707,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box2 .cuadrado2:before {
+      #tecnologias .tecnologias .box3D .cuadrado2:before {
         content: '';
         position: absolute;
         top: 0;
@@ -772,30 +721,20 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box2:hover .cuadrado1:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado2:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .boxExtra {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .boxExtra .cuadradoExtra {
+      #tecnologias .tecnologias .box3D .cuadradoExtra {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
-        background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .boxExtra .cuadradoExtra .textoResponsive {
+        #tecnologias .tecnologias .box3D .cuadradoExtra .textoResponsive {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -809,10 +748,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .boxExtra:hover .cuadradoExtra {
+      #tecnologias .tecnologias .box3D:hover .cuadradoExtra {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .boxExtra .cuadradoExtra:after {
+      #tecnologias .tecnologias .box3D .cuadradoExtra:after {
         content: '';
         position: absolute;
         left: 0;
@@ -824,7 +763,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .boxExtra .cuadradoExtra:before {
+      #tecnologias .tecnologias .box3D .cuadradoExtra:before {
         content: '';
         position: absolute;
         top: 0;
@@ -838,30 +777,20 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .boxExtra:hover .cuadradoExtra:before {
+      #tecnologias .tecnologias .box3D:hover .cuadradoExtra:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box3 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .box3 .cuadrado3 {
+      #tecnologias .tecnologias .box3D .cuadrado3 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
-        background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .box3 .cuadrado3 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado3 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -875,10 +804,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box3:hover .cuadrado3 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado3 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box3 .cuadrado3:after {
+      #tecnologias .tecnologias .box3D .cuadrado3:after {
         content: '';
         position: absolute;
         left: 0;
@@ -890,7 +819,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box3 .cuadrado3:before {
+      #tecnologias .tecnologias .box3D .cuadrado3:before {
         content: '';
         position: absolute;
         top: 0;
@@ -904,31 +833,20 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box3:hover .cuadrado3:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado3:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box4 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      margin-top: 100px;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .box4 .cuadrado4 {
+      #tecnologias .tecnologias .box3D .cuadrado4 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
-        background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .box4 .cuadrado4 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado4 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -942,10 +860,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box4:hover .cuadrado4 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado4 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box4 .cuadrado4:after {
+      #tecnologias .tecnologias .box3D .cuadrado4:after {
         content: '';
         position: absolute;
         left: 0;
@@ -957,7 +875,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box4 .cuadrado4:before {
+      #tecnologias .tecnologias .box3D .cuadrado4:before {
         content: '';
         position: absolute;
         top: 0;
@@ -971,31 +889,20 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box4:hover .cuadrado4:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado4:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box5 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      margin-top: 100px;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .box5 .cuadrado5 {
+      #tecnologias .tecnologias .box3D .cuadrado5 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
-        background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .box5 .cuadrado5 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado5 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -1009,10 +916,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box5:hover .cuadrado5 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado5 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box5 .cuadrado5:after {
+      #tecnologias .tecnologias .box3D .cuadrado5:after {
         content: '';
         position: absolute;
         left: 0;
@@ -1024,7 +931,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box5 .cuadrado5:before {
+      #tecnologias .tecnologias .box3D .cuadrado5:before {
         content: '';
         position: absolute;
         top: 0;
@@ -1038,31 +945,20 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box5:hover .cuadrado5:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado5:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box6 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      margin-top: 100px;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .box6 .cuadrado6 {
+      #tecnologias .tecnologias .box3D .cuadrado6 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 150px;
+        height: inherit;
         background-color: black;
-        background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .box6 .cuadrado6 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado6 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -1076,10 +972,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box6:hover .cuadrado6 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado6 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box6 .cuadrado6:after {
+      #tecnologias .tecnologias .box3D .cuadrado6:after {
         content: '';
         position: absolute;
         left: 0;
@@ -1091,7 +987,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box6 .cuadrado6:before {
+      #tecnologias .tecnologias .box3D .cuadrado6:before {
         content: '';
         position: absolute;
         top: 0;
@@ -1105,31 +1001,20 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box6:hover .cuadrado6:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado6:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box7 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      margin-top: 100px;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .box7 .cuadrado7 {
+      #tecnologias .tecnologias .box3D .cuadrado7 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
-        background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .box7 .cuadrado7 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado7 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -1143,10 +1028,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box7:hover .cuadrado7 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado7 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box7 .cuadrado7:after {
+      #tecnologias .tecnologias .box3D .cuadrado7:after {
         content: '';
         position: absolute;
         left: 0;
@@ -1158,7 +1043,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box7 .cuadrado7:before {
+      #tecnologias .tecnologias .box3D .cuadrado7:before {
         content: '';
         position: absolute;
         top: 0;
@@ -1172,31 +1057,20 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box7:hover .cuadrado7:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado7:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box8 {
-      margin-top: 0.3em;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 9.345em;
-      margin-top: 100px;
-      -webkit-perspective: 1000px; }
-      #tecnologias .tecnologias .box8 .cuadrado8 {
+      #tecnologias .tecnologias .box3D .cuadrado8 {
         position: relative;
         display: inline-block;
         width: 100%;
-        height: 9.345em;
+        height: inherit;
         background-color: black;
-        background-size: 100%, cover;
         -webkit-transform-style: preserve-3d;
         -webkit-transition: all 0.5s;
         transition: all 0.5s; }
-        #tecnologias .tecnologias .box8 .cuadrado8 .texto {
+        #tecnologias .tecnologias .box3D .cuadrado8 .texto {
           position: absolute;
           text-transform: uppercase;
           background-color: black;
@@ -1210,10 +1084,10 @@ header {
           -webkit-transform: rotateX(-89.99deg);
           -webkit-transform-origin: top;
           z-index: 1; }
-      #tecnologias .tecnologias .box8:hover .cuadrado8 {
+      #tecnologias .tecnologias .box3D:hover .cuadrado8 {
         -webkit-transform: rotateX(80deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box8 .cuadrado8:after {
+      #tecnologias .tecnologias .box3D .cuadrado8:after {
         content: '';
         position: absolute;
         left: 0;
@@ -1225,7 +1099,7 @@ header {
         background-position: bottom;
         -webkit-transform: rotateX(90deg);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box8 .cuadrado8:before {
+      #tecnologias .tecnologias .box3D .cuadrado8:before {
         content: '';
         position: absolute;
         top: 0;
@@ -1239,79 +1113,41 @@ header {
         opacity: 0.15;
         -webkit-transform: rotateX(95deg) translateZ(-80px) scale(0.75);
         -webkit-transform-origin: bottom; }
-      #tecnologias .tecnologias .box8:hover .cuadrado8:before {
+      #tecnologias .tecnologias .box3D:hover .cuadrado8:before {
         opacity: 1;
         box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
         -webkit-transform: rotateX(0) translateZ(-60px) scale(0.85); }
-    #tecnologias .tecnologias .box9 {
-      margin-top: 100px;
-      margin-left: 0.7em;
-      margin-right: 0.7em;
-      position: relative;
-      display: inline-block;
-      width: 24%;
-      height: 150px;
-      background-color: blue;
-      overflow: hidden; }
-    #tecnologias .tecnologias .cuadrado9 {
-      position: relative;
-      display: inline-block;
-      width: 100%;
-      height: 150px;
-      background-color: black;
-      overflow: hidden; }
-      #tecnologias .tecnologias .cuadrado9 .texto {
-        color: white;
-        text-shadow: 0px 0px 1px #000;
-        margin-top: 170px;
-        background: #b5bdc8;
-        background: -moz-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b5bdc8), color-stop(36%, #828c95), color-stop(100%, #28343b));
-        background: -webkit-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
-        background: -o-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
-        background: -ms-linear-gradient(top, #b5bdc8 0%, #828c95 36%, #28343b 100%);
-        background: linear-gradient(to bottom, #b5bdc8 0%, #828c95 36%, #28343b 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
-        opacity: 0.5;
-        width: 500px;
-        height: 20px;
-        font-size: 19px;
-        left: -200px; }
-  #tecnologias .tecno {
-    text-align: center;
-    position: absolute;
-    color: white;
-    overflow: hidden;
-    font-family: 'Nova Square', cursive;
-    line-height: 100px; }
-  #tecnologias .html5 {
-    background: url(../img/html5.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .css3 {
-    background: url(../img/css3.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .php {
-    background: url(../img/php.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .js {
-    background: url(../img/javascript.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .jquery {
-    background: url(../img/jquery.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .mysql {
-    background: url(../img/Mysql.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .net {
-    background: url(../img/visualstudio.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .java {
-    background: url(../img/java.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .responsive {
-    background: url(../img/responsive.png) center no-repeat; }
-  #tecnologias .texto {
-    font-family: 'Londrina Outline', cursive; }
+
+/*  :_ ;  */
+.html5 {
+  background: url(../img/html5.png) center no-repeat; }
+
+.css3 {
+  background: url(../img/css3.png) center no-repeat; }
+
+.php {
+  background: url(../img/php.png) center no-repeat; }
+
+.jsOk {
+  background: url(../img/javascript.png) center no-repeat; }
+
+.jquery {
+  background: url(../img/jquery.png) center no-repeat; }
+
+.mysql {
+  background: url(../img/Mysql.png) center no-repeat; }
+
+.net {
+  background: url(../img/visualstudio.png) center no-repeat; }
+
+.java {
+  background: url(../img/java.png) center no-repeat; }
+
+.responsive {
+  background: url(../img/responsive.png) center no-repeat; }
+
+.texto {
+  font-family: 'Londrina Outline', cursive; }
 
 /* ::::::::::::::::::::::::; FIN TECNOLOGIAS :::::::::::::::::::::::*/
 #reparacion {
@@ -1333,18 +1169,45 @@ header {
 
 /* ::::::::::::::::::::::::; USO DE LAS MEDIA QUERIES :::::::::::::::::::::::*/
 @media screen and (max-width: 300px) {
-  #inicio, #quienesSomos, #portfolio, #tecnologias, #contacto, #fondo, footer, header {
+  #inicio, #quienesSomos, #portfolio, #tecnologias, #contacto, #fondo, footer {
     display: none; }
 
   html, body {
     min-width: 0px;
-    width: 300px; }
+    width: 300px;
+    margin: 0 auto; }
 
-  #reparacion {
-    display: block; } }
+  header {
+    width: 300px;
+    min-width: 300px;
+    position: relative;
+    display: inline-block;
+    border-radius: 0; }
+    header #translation {
+      display: none; }
+    header nav ul {
+      left: 0; }
+      header nav ul li {
+        background-color: steelblue;
+        text-align: center;
+        left: 0;
+        width: 100%;
+        font-weight: bold;
+        display: block;
+        cursor: pointer;
+        margin-top: 5px;
+        border-radius: 0px;
+        padding: 0 0px;
+        margin-top: 3px; }
+        header nav ul li:hover {
+          display: block; }
+
+  /*#reparacion {
+   display: block;
+  }*/ }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  #inicio, #quienesSomos, #portfolio, #tecnologias, #contacto, #fondo, footer, header {
+  #inicio, #quienesSomos, #portfolio, #tecnologias, #contacto, #fondo, footer {
     display: none; }
 
   html, body {
@@ -1352,85 +1215,6 @@ header {
     max-width: 480px;
     width: 100%; }
 
-  #reparacion {
-    display: block; } }
-/*PRUEBAS DE RESPONSIVE PARA NOTEBOOK*/
-@media (min-width: 1300px) {
-  #contacto {
-    background: url(../img/backgrounds/pruebas/contacto01_notebook.jpg) no-repeat;
-    background-size: 100% 100%; }
-    #contacto #formulario {
-      top: 2em; }
-
-  #tecnologias .tecnologias .box1 {
-    margin-top: 7%;
-    height: 7em; }
-    #tecnologias .tecnologias .box1 .cuadrado1 {
-      height: 7em; }
-  #tecnologias .tecnologias .box2 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box2 .cuadrado2 {
-      height: 7em; }
-  #tecnologias .tecnologias .box3 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box3 .cuadrado3 {
-      height: 7em; }
-  #tecnologias .tecnologias .box4 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box4 .cuadrado4 {
-      height: 7em; }
-  #tecnologias .tecnologias .box5 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box5 .cuadrado5 {
-      height: 7em; }
-  #tecnologias .tecnologias .box6 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box6 .cuadrado6 {
-      height: 7em; }
-  #tecnologias .tecnologias .box7 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box7 .cuadrado7 {
-      height: 7em; }
-  #tecnologias .tecnologias .box8 {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .box8 .cuadrado8 {
-      height: 7em; }
-  #tecnologias .tecnologias .boxExtra {
-    margin-top: 4.5em;
-    height: 7em; }
-    #tecnologias .tecnologias .boxExtra .cuadradoExtra {
-      height: 7em; }
-  #tecnologias .html5 {
-    background: url(../img/html5.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .css3 {
-    background: url(../img/css3.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .php {
-    background: url(../img/php.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .js {
-    background: url(../img/javascript.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .jquery {
-    background: url(../img/jquery.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .mysql {
-    background: url(../img/Mysql.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .net {
-    background: url(../img/visualstudio.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .java {
-    background: url(../img/java.png) center no-repeat;
-    background-size: 100%; }
-  #tecnologias .responsive {
-    background: url(../img/responsive.png) center no-repeat;
-    background-size: 100%; } }
+  /*#reparacion {
+   display: block;
+  }*/ }
